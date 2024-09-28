@@ -454,3 +454,23 @@ These source files will be recompiled
 [2024-09-27 17:05:22]	[done]
 	build successfully !
 
+[2024-09-28 16:20:12]	[info] incremental build: 2 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_gimbal.cpp': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': source file has been changed.
+
+[2024-09-28 16:20:14]	[done]
+	build successfully !
+
+[2024-09-28 16:34:54]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_gimbal.cpp': source file has been changed.
+
+[2024-09-28 16:34:55]	[done]
+	build successfully !
+
+[2024-09-28 16:40:16]	[done]
+	build successfully !
+

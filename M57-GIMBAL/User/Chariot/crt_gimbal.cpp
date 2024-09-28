@@ -221,7 +221,7 @@ void Class_Gimbal_Pitch_Motor_GM6020::Transform_Angle()
 {
     True_Rad_Pitch = -1 * IMU->Get_Rad_Roll();
     True_Gyro_Pitch = -1 * IMU->Get_Gyro_Roll();
-    True_Angle_Pitch = RADPS_TO_RPM(True_Rad_Pitch);
+    True_Angle_Pitch = RAD_TO_ANGEL(True_Rad_Pitch);//一开始为RADPS_TO_RPM 改为RAD_TO_ANGEL
 }
 
 /**
@@ -400,34 +400,34 @@ void Class_Gimbal::Output()
                 Motor_Yaw.Set_DJI_Motor_Control_Method(DJI_Motor_Control_Method_IMU_OMEGA);
                 if (MiniPC->Get_Chassis_Target_Velocity_X() == 0 && MiniPC->Get_Chassis_Target_Velocity_Y() == 0)
                 {
-                    Motor_Pitch_LK6010.Set_LK_Motor_Control_Method(LK_Motor_Control_Method_IMU_OMEGA);
+                    Motor_Pitch.Set_DJI_Motor_Control_Method(DJI_Motor_Control_Method_IMU_OMEGA);
                     Motor_Yaw.Set_Target_Omega(test_speed1); // 设定yaw轴速度
 
-                    if (Motor_Pitch_LK6010.Get_True_Angle_Pitch() >= 0) // 计算pitch轴速度
+                    if (Motor_Pitch.Get_True_Angle_Pitch() >= 0) // 计算pitch轴速度
                         test_speed2 = -CRUISE_PITCH;
-                    else if (Motor_Pitch_LK6010.Get_True_Angle_Pitch() <= -18.5)
+                    else if (Motor_Pitch.Get_True_Angle_Pitch() <= -18.5)
                         test_speed2 = CRUISE_PITCH;
 
                     if (delay_time <= 1000) // 导航巡航 -> 巡航延迟消抖
                     {
                         Motor_Pitch.Set_DJI_Motor_Control_Method(DJI_Motor_Control_Method_IMU_ANGLE);
-                        Motor_Pitch_LK6010.Set_Target_Angle(-0.146f);
+                        Motor_Pitch.Set_Target_Angle(-0.146f);
                         delay_time++;
                     }
                     else
                     {
-                        Motor_Pitch_LK6010.Set_Target_Omega(test_speed2);
-                        Target_Pitch_Angle = Motor_Pitch_LK6010.Get_True_Angle_Pitch() * PI / 180; // 获取pitch轴角度
+                        Motor_Pitch.Set_Target_Omega(test_speed2);
+                        Target_Pitch_Angle = Motor_Pitch.Get_True_Angle_Pitch() * PI / 180; // 获取pitch轴角度
                         Math_Constrain(&Target_Pitch_Angle, Min_Pitch_Rad, Max_Pitch_Rad);         // pitch限位
-                        Motor_Pitch_LK6010.Set_Target_Angle(Target_Pitch_Angle);                   // 设置pitch轴角度
+                        Motor_Pitch.Set_Target_Angle(Target_Pitch_Angle);                   // 设置pitch轴角度
                     }
                 }
                 else
                 {
-                    Motor_Pitch_LK6010.Set_LK_Motor_Control_Method(LK_Motor_Control_Method_IMU_ANGLE);
+                    Motor_Pitch.Set_DJI_Motor_Control_Method(DJI_Motor_Control_Method_IMU_ANGLE);
 
                     Motor_Yaw.Set_Target_Omega(test_speed1 * 0.5);
-                    Motor_Pitch_LK6010.Set_Target_Angle(-0.146f);
+                    Motor_Pitch.Set_Target_Angle(-0.146f);
                     delay_time = 0;
                 }
 
@@ -457,7 +457,7 @@ void Class_Gimbal::Output()
 
                     Target_Pitch_Angle = MiniPC->Get_Rx_Pitch_Angle();                 // 获取pitch轴角度
                     Math_Constrain(&Target_Pitch_Angle, Min_Pitch_Rad, Max_Pitch_Rad); // pitch限位
-                    Motor_Pitch_LK6010.Set_Target_Angle(Target_Pitch_Angle);           // 设置pitch轴角度
+                    Motor_Pitch.Set_Target_Angle(Target_Pitch_Angle);           // 设置pitch轴角度
                 }
                 else if (Data_Sign == 1) // 导航
                 {
@@ -469,7 +469,7 @@ void Class_Gimbal::Output()
 
                     // 云台工作
                     Motor_Yaw.Set_DJI_Motor_Control_Method(DJI_Motor_Control_Method_IMU_OMEGA);
-                    Motor_Pitch_LK6010.Set_LK_Motor_Control_Method(LK_Motor_Control_Method_IMU_ANGLE);
+                    Motor_Pitch.Set_DJI_Motor_Control_Method(DJI_Motor_Control_Method_IMU_ANGLE);
 
                     Target_Yaw_Angle = Motor_Yaw.Get_True_Angle_Yaw(); // 设置yaw轴角度
                     Motor_Yaw.Set_Target_Angle(Target_Yaw_Angle);
@@ -478,7 +478,7 @@ void Class_Gimbal::Output()
 
                     Target_Pitch_Angle = 0.0f;                                         // 设置pitch为0°
                     Math_Constrain(&Target_Pitch_Angle, Min_Pitch_Rad, Max_Pitch_Rad); // pitch限位
-                    Motor_Pitch_LK6010.Set_Target_Angle(Target_Pitch_Angle);           // 设置pitch轴角度
+                    Motor_Pitch.Set_Target_Angle(Target_Pitch_Angle);           // 设置pitch轴角度
                 }
             }
         }
@@ -488,38 +488,38 @@ void Class_Gimbal::Output()
             {
                 // 上位机在巡航中途离线
                 Motor_Yaw.Set_DJI_Motor_Control_Method(DJI_Motor_Control_Method_IMU_OMEGA);
-                Motor_Pitch_LK6010.Set_LK_Motor_Control_Method(LK_Motor_Control_Method_IMU_OMEGA);
+                Motor_Pitch.Set_DJI_Motor_Control_Method(DJI_Motor_Control_Method_IMU_OMEGA);
                 Motor_Yaw.Set_Target_Omega(test_speed1); // 设定yaw轴速度
 
-                if (Motor_Pitch_LK6010.Get_True_Angle_Pitch() >= 0) // 计算pitch轴速度
+                if (Motor_Pitch.Get_True_Angle_Pitch() >= 0) // 计算pitch轴速度
                     test_speed2 = -CRUISE_PITCH;
-                else if (Motor_Pitch_LK6010.Get_True_Angle_Pitch() <= -8)
+                else if (Motor_Pitch.Get_True_Angle_Pitch() <= -8)
                     test_speed2 = CRUISE_PITCH;
 
                 if (delay_time <= 1000) // 导航巡航 -> 巡航延迟消抖
                 {
                     Motor_Pitch.Set_DJI_Motor_Control_Method(DJI_Motor_Control_Method_IMU_ANGLE);
-                    Motor_Pitch_LK6010.Set_Target_Angle(-0.146f);
+                    Motor_Pitch.Set_Target_Angle(-0.146f);
                     delay_time++;
                 }
                 else
-                    Motor_Pitch_LK6010.Set_Target_Omega(test_speed2);
+                    Motor_Pitch.Set_Target_Omega(test_speed2);
             }
             else
             {
                 // 上位机非巡航中途离线
                 // 云台工作
                 Motor_Yaw.Set_DJI_Motor_Control_Method(DJI_Motor_Control_Method_IMU_ANGLE);
-                Motor_Pitch_LK6010.Set_LK_Motor_Control_Method(LK_Motor_Control_Method_IMU_ANGLE);
+                Motor_Pitch.Set_DJI_Motor_Control_Method(DJI_Motor_Control_Method_IMU_ANGLE);
 
                 // 设置Yaw角度
                 Target_Yaw_Angle = Motor_Yaw.Get_True_Angle_Yaw();
                 Motor_Yaw.Set_Target_Angle(Target_Yaw_Angle);
 
                 // 设置Pitch角度
-                Target_Pitch_Angle = Motor_Pitch_LK6010.Get_True_Angle_Pitch() * PI / 180;
+                Target_Pitch_Angle = Motor_Pitch.Get_True_Angle_Pitch() * PI / 180;
                 Math_Constrain(&Target_Pitch_Angle, Min_Pitch_Rad, Max_Pitch_Rad); // pitch限位
-                Motor_Pitch_LK6010.Set_Target_Angle(Target_Pitch_Angle);
+                Motor_Pitch.Set_Target_Angle(Target_Pitch_Angle);
             }
         }
     }
