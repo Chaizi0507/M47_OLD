@@ -1,0 +1,456 @@
+[2024-09-23 16:53:55]	[info] incremental build: 86 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Core\Src\can.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Core\Src\dma.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Core\Src\gpio.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Core\Src\i2c.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Core\Src\main.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Core\Src\spi.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Core\Src\stm32f4xx_hal_msp.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Core\Src\stm32f4xx_it.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Core\Src\system_stm32f4xx.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Core\Src\tim.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Core\Src\usart.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_can.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_exti.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c_ex.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pcd.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pcd_ex.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_spi.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_usb.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Middlewares\ST\STM32_USB_Device_Library\Class\CDC\Src\usbd_cdc.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_core.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ctlreq.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ioreq.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\USB_DEVICE\App\usb_device.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\USB_DEVICE\App\usbd_cdc_if.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\USB_DEVICE\App\usbd_desc.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\USB_DEVICE\Target\usbd_conf.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_booster.cpp': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_chassis.cpp': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_gimbal.cpp': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_boardc_bmi088.cpp': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_boardc_ist8310.cpp': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_buzzer.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_djimotor.cpp': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_dmmotor.cpp': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_dr16.cpp': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_dwt.cpp': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_imu.cpp': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_lkmotor.cpp': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_manifold.cpp': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_minipc.cpp': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_referee.cpp': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_sampler.cpp': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_serialplot.cpp': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_servo.cpp': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_supercap.cpp': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_witahrs.cpp': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Algorithm\PID.cpp': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Algorithm\QuaternionEKF.cpp': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Algorithm\alg_MahonyAHRS.cpp': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Algorithm\alg_filter.cpp': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Algorithm\alg_fsm.cpp': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Algorithm\alg_pid.cpp': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Algorithm\alg_power_limit.cpp': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Algorithm\alg_slope.cpp': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Algorithm\kalman_filter.cpp': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Algorithm\user_lib.cpp': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_adc.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_bsp-boarda.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_buzzer.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_dwt.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_i2c.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_math.cpp': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_spi.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_tim.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_uart.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_usb.c': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Task\tsk_config_and_callback.cpp': object (.o) file not exist
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\startup_stm32f407xx.s': object (.o) file not exist
+
+[2024-09-23 16:54:02]	[done]
+	build successfully !
+
+[2024-09-24 15:48:40]	[info] incremental build: 9 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Core\Src\main.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\USB_DEVICE\App\usbd_cdc_if.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_booster.cpp': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_dr16.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_referee.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_usb.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Task\tsk_config_and_callback.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+
+[2024-09-24 15:48:42]	[done]
+	build successfully !
+
+[2024-09-24 16:14:52]	[done]
+	build successfully !
+
+[2024-09-24 18:47:59]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_booster.cpp': source file has been changed.
+
+[2024-09-24 18:48:00]	[done]
+	build successfully !
+
+[2024-09-24 19:06:22]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': source file has been changed.
+
+[2024-09-24 19:06:23]	[done]
+	build successfully !
+
+[2024-09-24 19:10:35]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': source file has been changed.
+
+[2024-09-24 19:10:37]	[done]
+	build successfully !
+
+[2024-09-24 20:26:20]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_booster.cpp': source file has been changed.
+
+[2024-09-24 20:26:22]	[done]
+	build successfully !
+
+[2024-09-24 20:27:00]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_booster.cpp': source file has been changed.
+
+[2024-09-24 20:27:01]	[done]
+	build successfully !
+
+[2024-09-25 15:59:29]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': source file has been changed.
+
+[2024-09-25 15:59:31]	[done]
+	build successfully !
+
+[2024-09-25 16:40:00]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_minipc.cpp': source file has been changed.
+
+[2024-09-25 16:40:01]	[done]
+	build successfully !
+
+[2024-09-25 16:44:31]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_minipc.cpp': source file has been changed.
+
+[2024-09-25 16:44:33]	[done]
+	build successfully !
+
+[2024-09-25 17:17:10]	[info] incremental build: 12 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Core\Src\main.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\USB_DEVICE\App\usbd_cdc_if.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_booster.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_chassis.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_gimbal.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_dr16.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_minipc.cpp': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_referee.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_usb.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Task\tsk_config_and_callback.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+
+[2024-09-25 17:17:11]	compilation failed at : "d:\Embedded system\Project\RM\M57\M57-GIMBAL\USB_DEVICE\App\usbd_cdc_if.c", exit code: 1
+command: 
+  "d:\Embedded system\Tool\keil5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I. -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../User/Chariot -I../User/Device -I../User/Interaction -I../User/Middleware/Algorithm -I../User/Middleware/Driver -I../User/Task -I../Drivers/CMSIS/DSP/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Core/Inc -IRTE/_infantry -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__TARGET_FPU_VFP -D__FPU_PRESENT="1" --cpu Cortex-M4.fp --li --c99 -O0 --split_sections -W --cpp11 -g -o .\..\MDK-ARM\infantry\.obj\__\USB_DEVICE\App\usbd_cdc_if.o --no_depend_system_headers --depend .\..\MDK-ARM\infantry\.obj\__\USB_DEVICE\App\usbd_cdc_if.d .\..\USB_DEVICE\App\usbd_cdc_if.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+"../User/Device/dvc_minipc.h", line 531: Error:  #135: class "Struct_MiniPC_Tx_Data"  has no member "Self_Color"
+      Data_MCU_To_NUC.Self_Color = __Self_Color;
+                      ^
+"../User/Device/dvc_minipc.h", line 541: Error:  #135: class "Struct_MiniPC_Tx_Data"  has no member "Outpost_rfid"
+      Data_MCU_To_NUC.Outpost_rfid = __Outpost_Status;
+                      ^
+.\..\Core\Src\main.c: 0 warnings, 2 errors
+"../User/Device/dvc_minipc.h", line 531: Error:  #135: class "Struct_MiniPC_Tx_Data"  has no member "Self_Color"
+      Data_MCU_To_NUC.Self_Color = __Self_Color;
+                      ^
+"../User/Device/dvc_minipc.h", line 541: Error:  #135: class "Struct_MiniPC_Tx_Data"  has no member "Outpost_rfid"
+      Data_MCU_To_NUC.Outpost_rfid = __Outpost_Status;
+                      ^
+.\..\User\Chariot\crt_chassis.cpp: 0 warnings, 2 errors
+"../User/Device/dvc_minipc.h", line 531: Error:  #135: class "Struct_MiniPC_Tx_Data"  has no member "Self_Color"
+      Data_MCU_To_NUC.Self_Color = __Self_Color;
+                      ^
+"../User/Device/dvc_minipc.h", line 541: Error:  #135: class "Struct_MiniPC_Tx_Data"  has no member "Outpost_rfid"
+      Data_MCU_To_NUC.Outpost_rfid = __Outpost_Status;
+                      ^
+.\..\User\Chariot\crt_booster.cpp: 0 warnings, 2 errors
+"../User/Device/dvc_minipc.h", line 531: Error:  #135: class "Struct_MiniPC_Tx_Data"  has no member "Self_Color"
+      Data_MCU_To_NUC.Self_Color = __Self_Color;
+                      ^
+"../User/Device/dvc_minipc.h", line 541: Error:  #135: class "Struct_MiniPC_Tx_Data"  has no member "Outpost_rfid"
+      Data_MCU_To_NUC.Outpost_rfid = __Outpost_Status;
+                      ^
+.\..\USB_DEVICE\App\usbd_cdc_if.c: 0 warnings, 2 errors
+
+[2024-09-25 17:19:49]	[info] incremental build: 12 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Core\Src\main.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\USB_DEVICE\App\usbd_cdc_if.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_booster.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_chassis.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_gimbal.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_dr16.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_minipc.cpp': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_referee.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_usb.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Task\tsk_config_and_callback.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+
+[2024-09-25 17:19:50]	compilation failed at : "d:\Embedded system\Project\RM\M57\M57-GIMBAL\USB_DEVICE\App\usbd_cdc_if.c", exit code: 1
+command: 
+  "d:\Embedded system\Tool\keil5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I. -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../User/Chariot -I../User/Device -I../User/Interaction -I../User/Middleware/Algorithm -I../User/Middleware/Driver -I../User/Task -I../Drivers/CMSIS/DSP/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Core/Inc -IRTE/_infantry -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__TARGET_FPU_VFP -D__FPU_PRESENT="1" --cpu Cortex-M4.fp --li --c99 -O0 --split_sections -W --cpp11 -g -o .\..\MDK-ARM\infantry\.obj\__\USB_DEVICE\App\usbd_cdc_if.o --no_depend_system_headers --depend .\..\MDK-ARM\infantry\.obj\__\USB_DEVICE\App\usbd_cdc_if.d .\..\USB_DEVICE\App\usbd_cdc_if.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+"../User/Device/dvc_minipc.h", line 531: Error:  #135: class "Struct_MiniPC_Tx_Data"  has no member "Self_Color"
+      Data_MCU_To_NUC.Self_Color = __Self_Color;
+                      ^
+"../User/Device/dvc_minipc.h", line 541: Error:  #135: class "Struct_MiniPC_Tx_Data"  has no member "Outpost_rfid"
+      Data_MCU_To_NUC.Outpost_rfid = __Outpost_Status;
+                      ^
+.\..\User\Chariot\crt_booster.cpp: 0 warnings, 2 errors
+"../User/Device/dvc_minipc.h", line 531: Error:  #135: class "Struct_MiniPC_Tx_Data"  has no member "Self_Color"
+      Data_MCU_To_NUC.Self_Color = __Self_Color;
+                      ^
+"../User/Device/dvc_minipc.h", line 541: Error:  #135: class "Struct_MiniPC_Tx_Data"  has no member "Outpost_rfid"
+      Data_MCU_To_NUC.Outpost_rfid = __Outpost_Status;
+                      ^
+.\..\User\Chariot\crt_chassis.cpp: 0 warnings, 2 errors
+"../User/Device/dvc_minipc.h", line 531: Error:  #135: class "Struct_MiniPC_Tx_Data"  has no member "Self_Color"
+      Data_MCU_To_NUC.Self_Color = __Self_Color;
+                      ^
+"../User/Device/dvc_minipc.h", line 541: Error:  #135: class "Struct_MiniPC_Tx_Data"  has no member "Outpost_rfid"
+      Data_MCU_To_NUC.Outpost_rfid = __Outpost_Status;
+                      ^
+.\..\Core\Src\main.c: 0 warnings, 2 errors
+"../User/Device/dvc_minipc.h", line 531: Error:  #135: class "Struct_MiniPC_Tx_Data"  has no member "Self_Color"
+      Data_MCU_To_NUC.Self_Color = __Self_Color;
+                      ^
+"../User/Device/dvc_minipc.h", line 541: Error:  #135: class "Struct_MiniPC_Tx_Data"  has no member "Outpost_rfid"
+      Data_MCU_To_NUC.Outpost_rfid = __Outpost_Status;
+                      ^
+.\..\USB_DEVICE\App\usbd_cdc_if.c: 0 warnings, 2 errors
+
+[2024-09-25 17:20:25]	[info] incremental build: 12 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Core\Src\main.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\USB_DEVICE\App\usbd_cdc_if.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_booster.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_chassis.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_gimbal.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_dr16.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_minipc.cpp': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_referee.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_usb.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Task\tsk_config_and_callback.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+
+[2024-09-25 17:20:26]	compilation failed at : "d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_chassis.cpp", exit code: 1
+command: 
+  "d:\Embedded system\Tool\keil5\ARM\ARMCC\bin\armcc.exe" -c --cpp --apcs=interwork -I. -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../User/Chariot -I../User/Device -I../User/Interaction -I../User/Middleware/Algorithm -I../User/Middleware/Driver -I../User/Task -I../Drivers/CMSIS/DSP/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Core/Inc -IRTE/_infantry -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__TARGET_FPU_VFP -D__FPU_PRESENT="1" --cpu Cortex-M4.fp --li -O0 --split_sections -W --cpp11 -g -o .\..\MDK-ARM\infantry\.obj\__\User\Chariot\crt_chassis.o --no_depend_system_headers --depend .\..\MDK-ARM\infantry\.obj\__\User\Chariot\crt_chassis.d .\..\User\Chariot\crt_chassis.cpp
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+"../User/Device/dvc_minipc.h", line 12: Error:  #37: the #endif for this directive is missing
+  #ifndef DVC_MINIPC_H
+   ^
+"../User/Device/dvc_minipc.h", line 12: Error:  #37: the #endif for this directive is missing
+  #ifndef DVC_MINIPC_H
+   ^
+"../User/Device/dvc_minipc.h", line 12: Error:  #37: the #endif for this directive is missing
+  #ifndef DVC_MINIPC_H
+   ^
+"../User/Device/dvc_minipc.h", line 12: Error:  #37: the #endif for this directive is missing
+  #ifndef DVC_MINIPC_H
+   ^
+.\..\Core\Src\main.c: 0 warnings, 4 errors
+"../User/Device/dvc_minipc.h", line 12: Error:  #37: the #endif for this directive is missing
+  #ifndef DVC_MINIPC_H
+   ^
+"../User/Device/dvc_minipc.h", line 12: Error:  #37: the #endif for this directive is missing
+  #ifndef DVC_MINIPC_H
+   ^
+".\..\User\Chariot\crt_booster.h", line 105: Error:  #20: identifier "Class_Gimbal" is undefined
+      Class_Gimbal *Gimbal;
+      ^
+.\..\User\Chariot\crt_booster.cpp: 0 warnings, 3 errors
+"../User/Device/dvc_minipc.h", line 12: Error:  #37: the #endif for this directive is missing
+  #ifndef DVC_MINIPC_H
+   ^
+"../User/Device/dvc_minipc.h", line 12: Error:  #37: the #endif for this directive is missing
+  #ifndef DVC_MINIPC_H
+   ^
+"../User/Device/dvc_minipc.h", line 12: Error:  #37: the #endif for this directive is missing
+  #ifndef DVC_MINIPC_H
+   ^
+"../User/Device/dvc_minipc.h", line 12: Error:  #37: the #endif for this directive is missing
+  #ifndef DVC_MINIPC_H
+   ^
+.\..\USB_DEVICE\App\usbd_cdc_if.c: 0 warnings, 4 errors
+"../User/Device/dvc_minipc.h", line 12: Error:  #37: the #endif for this directive is missing
+  #ifndef DVC_MINIPC_H
+   ^
+.\..\User\Chariot\crt_chassis.cpp: 0 warnings, 1 error
+
+[2024-09-25 17:21:10]	[info] incremental build: 12 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Core\Src\main.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\USB_DEVICE\App\usbd_cdc_if.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_booster.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_chassis.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_gimbal.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_dr16.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_minipc.cpp': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_referee.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_usb.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Task\tsk_config_and_callback.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+
+[2024-09-25 17:21:13]	[done]
+	build successfully !
+
+[2024-09-25 17:23:16]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_minipc.cpp': source file has been changed.
+
+[2024-09-25 17:23:18]	[done]
+	build successfully !
+
+[2024-09-26 15:59:12]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_minipc.cpp': source file has been changed.
+
+[2024-09-26 15:59:12]	compilation failed at : "d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_minipc.cpp", exit code: 1
+command: 
+  "d:\Embedded system\Tool\keil5\ARM\ARMCC\bin\armcc.exe" -c --cpp --apcs=interwork -I. -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../User/Chariot -I../User/Device -I../User/Interaction -I../User/Middleware/Algorithm -I../User/Middleware/Driver -I../User/Task -I../Drivers/CMSIS/DSP/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Core/Inc -IRTE/_infantry -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__TARGET_FPU_VFP -D__FPU_PRESENT="1" --cpu Cortex-M4.fp --li -O0 --split_sections -W --cpp11 -g -o .\..\MDK-ARM\infantry\.obj\__\User\Device\dvc_minipc.o --no_depend_system_headers --depend .\..\MDK-ARM\infantry\.obj\__\User\Device\dvc_minipc.d .\..\User\Device\dvc_minipc.cpp
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\User\Device\dvc_minipc.cpp", line 287: Error:  #135: class "Class_MiniPC"  has no member "Auto_aim"
+  void Class_MiniPC::Auto_aim(float x, float y, float z, float *yaw, float *pitch, float *distance, float *error)
+                     ^
+".\..\User\Device\dvc_minipc.cpp", line 293: Error:  #20: identifier "calc_yaw" is undefined
+      *yaw = -calc_yaw(x, y, z);
+              ^
+".\..\User\Device\dvc_minipc.cpp", line 294: Error:  #20: identifier "calc_pitch" is undefined
+      *pitch = -calc_pitch(x, y, z);
+                ^
+".\..\User\Device\dvc_minipc.cpp", line 295: Error:  #20: identifier "calc_distance" is undefined
+      *distance = calc_distance(x, y, z);
+                  ^
+".\..\User\Device\dvc_minipc.cpp", line 296: Error:  #20: identifier "Now_Angle_Yaw" is undefined
+      *error = Calc_Error(x,y,z,Now_Angle_Yaw,Now_Angle_Pitch); //这里的z为上位机直接发的z，不是弹道解算后的z1，判断时存在一定误差（瞄准误差允许范围�?5cm时，不影�?10m内打弹）
+                                ^
+".\..\User\Device\dvc_minipc.cpp", line 296: Error:  #20: identifier "Now_Angle_Pitch" is undefined
+      *error = Calc_Error(x,y,z,Now_Angle_Yaw,Now_Angle_Pitch); //这里的z为上位机直接发的z，不是弹道解算后的z1，判断时存在一定误差（瞄准误差允许范围�?5cm时，不影�?10m内打弹）
+                                              ^
+".\..\User\Device\dvc_minipc.cpp", line 296: Error:  #20: identifier "Calc_Error" is undefined
+      *error = Calc_Error(x,y,z,Now_Angle_Yaw,Now_Angle_Pitch); //这里的z为上位机直接发的z，不是弹道解算后的z1，判断时存在一定误差（瞄准误差允许范围�?5cm时，不影�?10m内打弹）
+               ^
+.\..\User\Device\dvc_minipc.cpp: 0 warnings, 7 errors
+
+[2024-09-26 16:00:11]	[info] incremental build: 12 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Core\Src\main.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\USB_DEVICE\App\usbd_cdc_if.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_booster.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_chassis.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_gimbal.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_dr16.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_minipc.cpp': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_referee.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_usb.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Task\tsk_config_and_callback.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+
+[2024-09-26 16:00:12]	compilation failed at : "d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_minipc.cpp", exit code: 1
+command: 
+  "d:\Embedded system\Tool\keil5\ARM\ARMCC\bin\armcc.exe" -c --cpp --apcs=interwork -I. -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../User/Chariot -I../User/Device -I../User/Interaction -I../User/Middleware/Algorithm -I../User/Middleware/Driver -I../User/Task -I../Drivers/CMSIS/DSP/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Core/Inc -IRTE/_infantry -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__TARGET_FPU_VFP -D__FPU_PRESENT="1" --cpu Cortex-M4.fp --li -O0 --split_sections -W --cpp11 -g -o .\..\MDK-ARM\infantry\.obj\__\User\Device\dvc_minipc.o --no_depend_system_headers --depend .\..\MDK-ARM\infantry\.obj\__\User\Device\dvc_minipc.d .\..\User\Device\dvc_minipc.cpp
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\User\Device\dvc_minipc.cpp", line 50: Error:  #20: identifier "Self_aim" is undefined
+      Self_aim(Data_NUC_To_MCU.Gimbal_Target_X, Data_NUC_To_MCU.Gimbal_Target_Y, Data_NUC_To_MCU.Gimbal_Target_Z, &Rx_Angle_Yaw, &Rx_Angle_Pitch, &Distance, &Error);
+      ^
+.\..\User\Device\dvc_minipc.cpp: 0 warnings, 1 error
+
+[2024-09-26 16:00:23]	[info] incremental build: 5 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_minipc.cpp': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_usb.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Task\tsk_config_and_callback.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+
+[2024-09-26 16:00:26]	[done]
+	build successfully !
+
+[2024-09-26 17:43:27]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_minipc.cpp': source file has been changed.
+
+[2024-09-26 17:43:29]	[done]
+	build successfully !
+
+[2024-09-27 17:05:20]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': source file has been changed.
+
+[2024-09-27 17:05:22]	[done]
+	build successfully !
+
