@@ -92,9 +92,9 @@ void Class_Tricycle_Chassis::Speed_Resolution()
         // 底盘失能 四轮子自锁
         for (int i = 0; i < 4; i++)
         {
-            Motor_Wheel[i].Set_DJI_Motor_Control_Method(DJI_Motor_Control_Method_OMEGA);
+            Motor_Wheel[i].Set_DJI_Motor_Control_Method(DJI_Motor_Control_Method_TORQUE);
             Motor_Wheel[i].PID_Angle.Set_Integral_Error(0.0f);
-            Motor_Wheel[i].Set_Target_Omega_Radian(0.0f);
+            Motor_Wheel[i].Set_Target_Torque(0.0f);
             //Motor_Wheel[i].Set_Out(0.0f);
             Motor_Wheel[i].TIM_PID_PeriodElapsedCallback();
         }       
@@ -123,14 +123,7 @@ void Class_Tricycle_Chassis::Speed_Resolution()
         {
             Math_Constrain(&Target_Omega, -Omega_Max, Omega_Max);
         }
-    case (Chassis_Control_Mode_NORMAL_SPIN):
-    {
 
-    }
-    case (Chassis_Control_Mode_FOLLOW_SPIN):
-    {
-        
-    }
 #ifdef SPEED_SLOPE
         // 速度换算，正运动学分解
         float motor1_temp_linear_vel = Slope_Velocity_Y.Get_Out() - Slope_Velocity_X.Get_Out() + Slope_Omega.Get_Out() * (HALF_WIDTH + HALF_LENGTH);
@@ -198,7 +191,15 @@ void Class_Tricycle_Chassis::Speed_Resolution()
         // }
     }
     break;
+    case (Chassis_Control_Mode_NORMAL_SPIN):
+    {
+
     }
+    case (Chassis_Control_Mode_FOLLOW_SPIN):
+    {
+        
+    }
+   }
 }
 
 /**
@@ -224,39 +225,42 @@ void Class_Tricycle_Chassis::TIM_Calculate_PeriodElapsedCallback(Enum_Sprint_Sta
 #ifdef POWER_LIMIT
 
     /****************************超级电容***********************************/
-    Supercap.Set_Now_Power(Referee->Get_Chassis_Power());
-    if (Referee->Get_Referee_Status() == Referee_Status_DISABLE)
-        Supercap.Set_Limit_Power(100.0f);
-    else
-    {
-        float offset;
-        offset = (Referee->Get_Chassis_Energy_Buffer() - 20.0f) / 4;
-        Supercap.Set_Limit_Power(Referee->Get_Chassis_Power_Max() + offset);
-    }
+    // Supercap.Set_Now_Power(Referee->Get_Chassis_Power());
+    // if (Referee->Get_Referee_Status() == Referee_Status_DISABLE)
+    //     Supercap.Set_Limit_Power(100.0f);
+    // else
+    // {
+    //     float offset;
+    //     offset = (Referee->Get_Chassis_Energy_Buffer() - 20.0f) / 4;
+    //     Supercap.Set_Limit_Power(Referee->Get_Chassis_Power_Max() + offset);
+    // }
 
-    Supercap.TIM_Supercap_PeriodElapsedCallback();
+    // Supercap.TIM_Supercap_PeriodElapsedCallback();
+
 
     /*************************功率限制策略*******************************/
-    if (__Sprint_Status == Sprint_Status_ENABLE)
-    {
-        // 功率限制
-        Power_Limit.Set_Power_Limit(Referee->Get_Chassis_Power_Max() * 1.5f);
-    }
-    else
-    {
-        Power_Limit.Set_Power_Limit(Referee->Get_Chassis_Power_Max());
-    }
+    // if (__Sprint_Status == Sprint_Status_ENABLE)
+    // {
+    //     // 功率限制
+    //     Power_Limit.Set_Power_Limit(Referee->Get_Chassis_Power_Max() * 1.5f);
+    // }
+    // else
+    // {
+        // Power_Limit.Set_Power_Limit(Referee->Get_Chassis_Power_Max());
+    // }
     Power_Limit.Set_Power_Limit(100.0f);
     Power_Limit.Set_Motor(Motor_Wheel); // 添加四个电机的控制电流和当前转速
-    Power_Limit.Set_Chassis_Buffer(Referee->Get_Chassis_Energy_Buffer());
+    Power_Limit.Set_Chassis_Buffer(0);
 
-    if (Supercap.Get_Supercap_Status() == Supercap_Status_DISABLE)
-        Power_Limit.Set_Supercap_Enegry(0.0f);
-    else
-        Power_Limit.Set_Supercap_Enegry(Supercap.Get_Stored_Energy());
-
+    // if (Supercap.Get_Supercap_Status() == Supercap_Status_DISABLE)
+    //     Power_Limit.Set_Supercap_Enegry(0.0f);
+    // else
+    //     Power_Limit.Set_Supercap_Enegry(Supercap.Get_Stored_Energy());
+    Power_Limit.Set_Supercap_Enegry(0.0f);
     Power_Limit.TIM_Adjust_PeriodElapsedCallback(Motor_Wheel); // 功率限制算法
-
+    /*
+    if ()
+    */
 #endif
 }
 

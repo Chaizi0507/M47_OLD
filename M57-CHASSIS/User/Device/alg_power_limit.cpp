@@ -132,6 +132,8 @@ void Class_Power_Limit::TIM_Adjust_PeriodElapsedCallback(Class_DJI_Motor_C620 (&
 		else
 			Power_Scale = 1.0f;
 
+    
+	
 	#elif defined (POWER_LIMIT_OLD_CONTROL)
 	float Power_Limit;
 	float max_power=50;//裁判系统读取不到数据时自己赋值,比赛使用时要注释掉
@@ -158,19 +160,20 @@ void Class_Power_Limit::TIM_Adjust_PeriodElapsedCallback(Class_DJI_Motor_C620 (&
 	
 	//根据电量选择使用电容组
 	//根据电容组电压线性改变限制功率
-	if(Supercap_Voltage >= 13.0f)
-	{
-		if(Supercap_Print_Flag == 0)
-		{
-			Power_Limit= Total_Power_Limit *1.5f + (Supercap_Voltage * 100.0f - 130.0f) * 2.0f;	
-		}
-		else
-		{
-			Power_Limit= Total_Power_Limit *1.5f + (Supercap_Voltage * 100.0f - 130.0f) * 4.0f;
-		}
-	}
-	else
-		Power_Limit = Total_Power_Limit * 1.2f;
+	// if(Supercap_Voltage >= 13.0f)
+	// {
+	// 	if(Supercap_Print_Flag == 0)
+	// 	{
+	// 		Power_Limit= Total_Power_Limit *1.5f + (Supercap_Voltage * 100.0f - 130.0f) * 2.0f;	
+	// 	}
+	// 	else
+	// 	{
+	// 		Power_Limit= Total_Power_Limit *1.5f + (Supercap_Voltage * 100.0f - 130.0f) * 4.0f;
+	// 	}
+	// }
+	// else
+	// 	Power_Limit = Total_Power_Limit * 1.2f;
+	Power_Limit = 100.0f;
 
 	//功率限制
 	if(Power_in>Power_Limit)  

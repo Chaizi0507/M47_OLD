@@ -129,7 +129,7 @@ protected:
     //拨弹盘堵转角速度阈值(弧度制), 低于该速度并且处于大扭矩状态认为卡弹
     float Driver_Omega_Threshold = 0.1f;
     //拨弹盘堵转扭矩阈值, 超出被认为卡弹
-    uint16_t Driver_Torque_Threshold = 5500;
+    uint16_t Driver_Torque_Threshold = 9500;
     //摩擦轮单次判定发弹阈值, 超出被认为发射子弹
     uint16_t Friction_Torque_Threshold = 3300;
     //摩擦轮速度判定发弹阈值, 超出则说明已经开机
@@ -140,7 +140,7 @@ protected:
     //读变量
 
     //拨弹盘默认速度, 一圈十二发子弹,
-    float Default_Driver_Omega = 12.0f;
+    float Default_Driver_Omega = 20.0f;
 
     //写变量
 

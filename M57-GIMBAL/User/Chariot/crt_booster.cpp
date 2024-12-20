@@ -93,7 +93,7 @@ void Class_FSM_Heat_Detect::Reload_TIM_Status_PeriodElapsedCallback()
         Heat = 0;
     }
 }
-
+int jam_flag = 0;
 /**
  * @brief 卡弹策略有限自动机
  *
@@ -123,7 +123,7 @@ void Class_FSM_Antijamming::Reload_TIM_Status_PeriodElapsedCallback()
         // 卡弹嫌疑状态
         Booster->Output();
 
-        if (Status[Now_Status_Serial].Time >= 100)
+        if (Status[Now_Status_Serial].Time >= 200)
         {
             // 长时间大扭矩->卡弹反应状态
             Set_Status(2);
@@ -142,6 +142,7 @@ void Class_FSM_Antijamming::Reload_TIM_Status_PeriodElapsedCallback()
 		//Booster->Driver_Angle = Booster->Motor_Driver.Get_Now_Angle() - PI / 6.0f;  新哨兵
         Booster->Driver_Angle = Booster->Motor_Driver.Get_Now_Angle() - PI / 12.0f*3.86;
         Booster->Motor_Driver.Set_Target_Angle(Booster->Driver_Angle);
+        jam_flag = 1;
         Set_Status(3);
     }
     break;
@@ -153,6 +154,7 @@ void Class_FSM_Antijamming::Reload_TIM_Status_PeriodElapsedCallback()
             // 长时间回拨->正常状态
             Set_Status(0);
         }
+        jam_flag = 0;
     }
     break;
     }
@@ -177,8 +179,9 @@ void Class_Booster::Init()
     // 拨弹盘电机
     Motor_Driver.PID_Angle.Init(75.0f, 0.0f, 1.0f, 0.0f, Default_Driver_Omega, Default_Driver_Omega);
     Motor_Driver.PID_Omega.Init(3500.0f, 800.0f, 0.0f, 0.0f, 10000.f, 16000.f);
-    Motor_Driver.Init(&hcan2, DJI_Motor_ID_0x203, DJI_Motor_Control_Method_OMEGA);
+    Motor_Driver.Init(&hcan2, DJI_Motor_ID_0x203, DJI_Motor_Control_Method_OMEGA);//normal
     //Motor_Driver.Init(&hcan2, DJI_Motor_ID_0x201, DJI_Motor_Control_Method_OMEGA,36.0f * 2.32f); 新哨兵
+    //Motor_Driver.Init(&hcan1, DJI_Motor_ID_0x201, DJI_Motor_Control_Method_ANGLE);//test
 
     // 摩擦轮电机左
     Motor_Friction_Left.PID_Omega.Init(120.0f, 10.0f, 0.1f, 0.0f, 2000.0f, Motor_Friction_Left.Get_Output_Max());
@@ -196,6 +199,10 @@ void Class_Booster::Init()
 
 void Class_Booster::Output()
 {
+    // Now_Angle = Motor_Driver.Get_Now_Angle();
+    // Motor_Driver.Set_DJI_Motor_Control_Method(DJI_Motor_Control_Method_ANGLE);
+    // Driver_Angle = Now_Angle + 2.0f * PI / 12.0f*2.32 * 5.0f; // 五连发
+    // Motor_Driver.Set_Target_Angle(Driver_Angle);
     Now_Angle = Motor_Driver.Get_Now_Angle();
     switch (Booster_Control_Type)
     {
@@ -274,14 +281,14 @@ void Class_Booster::Output()
         Motor_Friction_Right.Set_DJI_Motor_Control_Method(DJI_Motor_Control_Method_OMEGA);
 
         // 热量控制
-        if (Referee->Get_Booster_17mm_1_Heat() + 30 < Referee->Get_Booster_17mm_1_Heat_Max())
-        {
-            Motor_Driver.Set_Target_Omega(Default_Driver_Omega);
-        }
-        else
-        {
-            Motor_Driver.Set_Target_Omega(0);
-        }
+        // if (Referee->Get_Booster_17mm_1_Heat() + 30 < Referee->Get_Booster_17mm_1_Heat_Max())
+        // {
+             Motor_Driver.Set_Target_Omega(Default_Driver_Omega);
+        // }
+        // else
+        // {
+        //     Motor_Driver.Set_Target_Omega(0);
+        // }
         Driver_Angle = Motor_Driver.Get_Now_Angle();
         Motor_Friction_Left.Set_Target_Omega(-Friction_Omega);
         Motor_Friction_Right.Set_Target_Omega(Friction_Omega);
@@ -301,8 +308,8 @@ void Class_Booster::Output()
             Motor_Driver.Set_Target_Omega(0);
 
         // 热量控制
-        if (Referee->Get_Booster_17mm_1_Heat() + 40 >= Referee->Get_Booster_17mm_1_Heat_Max())
-            Motor_Driver.Set_Target_Omega(0);
+        // if (Referee->Get_Booster_17mm_1_Heat() + 40 >= Referee->Get_Booster_17mm_1_Heat_Max())
+        //     Motor_Driver.Set_Target_Omega(0);
             
         Driver_Angle = Motor_Driver.Get_Now_Angle();
         Motor_Friction_Left.Set_Target_Omega(-Friction_Omega);
@@ -324,7 +331,7 @@ void Class_Booster::TIM_Calculate_PeriodElapsedCallback()
     FSM_Heat_Detect.Reload_TIM_Status_PeriodElapsedCallback();
     //卡弹处理
     FSM_Antijamming.Reload_TIM_Status_PeriodElapsedCallback();
-    // Output();
+    //Output();
 
     Motor_Driver.TIM_PID_PeriodElapsedCallback();
     Motor_Friction_Left.TIM_PID_PeriodElapsedCallback();

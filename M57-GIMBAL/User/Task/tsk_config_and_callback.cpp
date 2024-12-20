@@ -145,39 +145,38 @@ void Gimbal_Device_CAN1_Callback(Struct_CAN_Rx_Buffer *CAN_RxMessage)
 {
     switch (CAN_RxMessage->Header.StdId)
     {
-
-    case (0x201):
-    {
-        chariot.Booster.Motor_Friction_Left.CAN_RxCpltCallback(CAN_RxMessage->Data);
-    }
-    break;
-    case (0x202):
-    {
-        chariot.Booster.Motor_Friction_Right.CAN_RxCpltCallback(CAN_RxMessage->Data);
-    }
-    break;
-    case (0x141):
-    {
-        chariot.Gimbal.Motor_Pitch_LK6010.CAN_RxCpltCallback(CAN_RxMessage->Data);
-    }
-    break;
-    case (0x203):
-    {
-        
-    }
-    break;
-    case (0x205):
-    {
-        chariot.Gimbal.Motor_Pitch.CAN_RxCpltCallback(CAN_RxMessage->Data);
-    }
-    break;
-    case (0x206):
-    {
-        
-    }
-    break;
-    break;
-    }
+        case (0x201):
+        {
+            chariot.Booster.Motor_Friction_Left.CAN_RxCpltCallback(CAN_RxMessage->Data);
+        }
+        break;
+        case (0x202):
+        {
+            chariot.Booster.Motor_Friction_Right.CAN_RxCpltCallback(CAN_RxMessage->Data);
+        }
+        break;
+        case (0x141):
+        {
+            chariot.Gimbal.Motor_Pitch_LK6010.CAN_RxCpltCallback(CAN_RxMessage->Data);
+        }
+        break;
+        case (0x203):
+        {
+            
+        }
+        break;
+        case (0x205):
+        {
+            chariot.Gimbal.Motor_Pitch.CAN_RxCpltCallback(CAN_RxMessage->Data);
+        }
+        break;
+        case (0x206):
+        {
+            
+        }
+        break;
+    
+    } 
 }
 #endif
 /**
@@ -190,41 +189,41 @@ void Gimbal_Device_CAN2_Callback(Struct_CAN_Rx_Buffer *CAN_RxMessage)
 {
     switch (CAN_RxMessage->Header.StdId)
     {
-    case (0x008): // 留给下板通讯
-    {
-        // chariot.Referee.CAN_RxCpltCallback(CAN_RxMessage->Data);
-        chariot.CAN_Gimbal_Rx_Chassis_Callback();
-    }
-    break;
-    case (0x010):
-    {
-        chariot.CAN_Gimbal_Rx_Chassis_Callback();
-    }
-    break;
-    case (0x012):
-    {
-        chariot.CAN_Gimbal_Rx_Chassis_Callback();
-    }
-    break;
-    case (0x014):
-    {
-        chariot.CAN_Gimbal_Rx_Chassis_Callback();
-    }
-    break;
-    case (0x203):
-    {
-        chariot.Booster.Motor_Driver.CAN_RxCpltCallback(CAN_RxMessage->Data);
-    }
-    break;
-    case (0x204):
-    {
-    }
-    break;
-    case (0x206):
-    {
-        chariot.Gimbal.Motor_Yaw.CAN_RxCpltCallback(CAN_RxMessage->Data);
-    }
-    break;
+        case (0x008): // 留给下板通讯
+        {
+            // chariot.Referee.CAN_RxCpltCallback(CAN_RxMessage->Data);
+            chariot.CAN_Gimbal_Rx_Chassis_Callback();
+        }
+        break;
+        case (0x010):
+        {
+            chariot.CAN_Gimbal_Rx_Chassis_Callback();
+        }
+        break;
+        case (0x012):
+        {
+            chariot.CAN_Gimbal_Rx_Chassis_Callback();
+        }
+        break;
+        case (0x014):
+        {
+            chariot.CAN_Gimbal_Rx_Chassis_Callback();
+        }
+        break;
+        case (0x203):
+        {
+            chariot.Booster.Motor_Driver.CAN_RxCpltCallback(CAN_RxMessage->Data);
+        }
+        break;
+        case (0x204):
+        {
+        }
+        break;
+        case (0x206):
+        {
+            chariot.Gimbal.Motor_Yaw.CAN_RxCpltCallback(CAN_RxMessage->Data);
+        }
+        break;
     }
 }
 #endif
@@ -338,7 +337,7 @@ void Task1ms_TIM12_Callback()
  * @brief TIM5任务回调函数
  *
  */
-
+uint8_t can_send_data[8];
 void Task1ms_TIM5_Callback()
 {
     init_finished++;
@@ -364,6 +363,19 @@ void Task1ms_TIM5_Callback()
         chariot.TIM_Calculate_PeriodElapsedCallback();
 
         /****************************** 驱动层回调函数 1ms *****************************************/
+
+        
+        // can_send_data[0]  = uint8_t((-chariot.DR16.Get_Left_X()+1)*255/2);
+        // can_send_data[1]  = uint8_t((chariot.DR16.Get_Left_Y()+1)*255/2);
+        // can_send_data[2]  = uint8_t((chariot.DR16.Get_Right_X()+1)*255/2);
+        // can_send_data[3]  = uint8_t((chariot.DR16.Get_Right_Y()+1)*255/2);
+        // can_send_data[4]  = chariot.DR16.Get_Left_Switch();
+        // can_send_data[5]  = chariot.DR16.Get_Right_Switch();
+        // can_send_data[6]  = chariot.DR16.Get_DR16_Status();
+
+        
+
+
 
         // 统一打包发送
         TIM_CAN_PeriodElapsedCallback();

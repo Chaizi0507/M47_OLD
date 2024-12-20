@@ -474,3 +474,1033 @@ These source files will be recompiled
 [2024-09-28 16:40:16]	[done]
 	build successfully !
 
+[2024-09-28 20:59:54]	[info] incremental build: 9 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Core\Src\main.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\USB_DEVICE\App\usbd_cdc_if.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_booster.cpp': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_dr16.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_referee.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_usb.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Task\tsk_config_and_callback.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+
+[2024-09-28 20:59:57]	[done]
+	build successfully !
+
+[2024-09-28 21:13:02]	[info] incremental build: 9 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Core\Src\main.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\USB_DEVICE\App\usbd_cdc_if.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_booster.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_dr16.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_referee.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_usb.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Task\tsk_config_and_callback.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+
+[2024-09-28 21:13:05]	[done]
+	build successfully !
+
+[2024-09-28 21:14:04]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_booster.cpp': source file has been changed.
+
+[2024-09-28 21:14:06]	[done]
+	build successfully !
+
+[2024-09-28 21:24:25]	[info] incremental build: 9 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Core\Src\main.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\USB_DEVICE\App\usbd_cdc_if.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_booster.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_dr16.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_referee.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_usb.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Task\tsk_config_and_callback.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+
+[2024-09-28 21:24:28]	[done]
+	build successfully !
+
+[2024-09-28 21:35:36]	[info] incremental build: 9 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Core\Src\main.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\USB_DEVICE\App\usbd_cdc_if.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_booster.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_dr16.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_referee.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_usb.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Task\tsk_config_and_callback.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+
+[2024-09-28 21:35:39]	[done]
+	build successfully !
+
+[2024-09-28 21:42:28]	[info] incremental build: 9 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Core\Src\main.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\USB_DEVICE\App\usbd_cdc_if.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_booster.cpp': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_dr16.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_referee.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_usb.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Task\tsk_config_and_callback.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+
+[2024-09-28 21:42:31]	[done]
+	build successfully !
+
+[2024-09-28 21:55:00]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_booster.cpp': source file has been changed.
+
+[2024-09-28 21:55:02]	[done]
+	build successfully !
+
+[2024-09-28 21:55:28]	[done]
+	build successfully !
+
+[2024-09-28 21:56:33]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_booster.cpp': source file has been changed.
+
+[2024-09-28 21:56:35]	[done]
+	build successfully !
+
+[2024-09-28 22:00:18]	[info] incremental build: 9 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Core\Src\main.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\USB_DEVICE\App\usbd_cdc_if.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_booster.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_dr16.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_referee.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_usb.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Task\tsk_config_and_callback.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+
+[2024-09-28 22:00:21]	[done]
+	build successfully !
+
+[2024-09-28 22:25:30]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_booster.cpp': source file has been changed.
+
+[2024-09-28 22:25:31]	[done]
+	build successfully !
+
+[2024-09-28 22:33:24]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_booster.cpp': source file has been changed.
+
+[2024-09-28 22:33:26]	[done]
+	build successfully !
+
+[2024-09-30 17:59:14]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_booster.cpp': source file has been changed.
+
+[2024-09-30 17:59:16]	[done]
+	build successfully !
+
+[2024-09-30 17:59:36]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_booster.cpp': source file has been changed.
+
+[2024-09-30 17:59:37]	[done]
+	build successfully !
+
+[2024-09-30 18:06:20]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_booster.cpp': source file has been changed.
+
+[2024-09-30 18:06:21]	[done]
+	build successfully !
+
+[2024-09-30 18:06:48]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_booster.cpp': source file has been changed.
+
+[2024-09-30 18:06:50]	[done]
+	build successfully !
+
+[2024-09-30 18:18:12]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_booster.cpp': source file has been changed.
+
+[2024-09-30 18:18:14]	[done]
+	build successfully !
+
+[2024-09-30 19:00:24]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': source file has been changed.
+
+[2024-09-30 19:00:25]	[done]
+	build successfully !
+
+[2024-10-02 09:57:00]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': source file has been changed.
+
+[2024-10-02 09:57:02]	[done]
+	build successfully !
+
+[2024-10-02 10:28:15]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': source file has been changed.
+
+[2024-10-02 10:28:18]	[done]
+	build successfully !
+
+[2024-10-02 10:53:43]	[info] incremental build: 9 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Core\Src\main.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\USB_DEVICE\App\usbd_cdc_if.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_booster.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_dr16.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_referee.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_usb.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Task\tsk_config_and_callback.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+
+[2024-10-02 10:53:45]	[done]
+	build successfully !
+
+[2024-10-08 21:17:50]	[info] incremental build: 9 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Core\Src\main.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\USB_DEVICE\App\usbd_cdc_if.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_booster.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_dr16.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_referee.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_usb.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Task\tsk_config_and_callback.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+
+[2024-10-08 21:17:54]	[done]
+	build successfully !
+
+[2024-10-08 21:27:02]	[info] incremental build: 9 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Core\Src\main.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\USB_DEVICE\App\usbd_cdc_if.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_booster.cpp': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_dr16.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_referee.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_usb.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Task\tsk_config_and_callback.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_booster.h' has been changed.
+
+[2024-10-08 21:27:04]	[done]
+	build successfully !
+
+[2024-10-16 17:08:20]	[info] incremental build: 2 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_gimbal.cpp': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': source file has been changed.
+
+[2024-10-16 17:08:22]	[done]
+	build successfully !
+
+[2024-10-16 17:08:54]	[done]
+	build successfully !
+
+[2024-10-19 19:22:29]	[info] incremental build: 2 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_gimbal.cpp': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_minipc.cpp': source file has been changed.
+
+[2024-10-19 19:22:32]	[done]
+	build successfully !
+
+[2024-10-20 15:59:41]	[info] incremental build: 12 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Core\Src\main.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\USB_DEVICE\App\usbd_cdc_if.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_booster.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_chassis.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_gimbal.cpp': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_dr16.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_minipc.cpp': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_referee.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_usb.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Task\tsk_config_and_callback.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+
+[2024-10-20 15:59:44]	[done]
+	build successfully !
+
+[2024-10-20 16:17:24]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_gimbal.cpp': source file has been changed.
+
+[2024-10-20 16:17:25]	[done]
+	build successfully !
+
+[2024-10-20 18:54:08]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': source file has been changed.
+
+[2024-10-20 18:54:09]	[done]
+	build successfully !
+
+[2024-10-20 19:11:25]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': source file has been changed.
+
+[2024-10-20 19:11:27]	[done]
+	build successfully !
+
+[2024-10-20 19:22:14]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': source file has been changed.
+
+[2024-10-20 19:22:15]	[done]
+	build successfully !
+
+[2024-10-20 20:05:36]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': source file has been changed.
+
+[2024-10-20 20:05:37]	[done]
+	build successfully !
+
+[2024-10-26 15:29:08]	[info] incremental build: 2 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': source file has been changed.
+
+[2024-10-26 15:29:11]	[done]
+	build successfully !
+
+[2024-10-26 16:06:45]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': source file has been changed.
+
+[2024-10-26 16:06:47]	[done]
+	build successfully !
+
+[2024-10-26 16:24:25]	[info] incremental build: 2 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_minipc.cpp': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': source file has been changed.
+
+[2024-10-26 16:24:27]	[done]
+	build successfully !
+
+[2024-10-26 17:11:21]	[info] incremental build: 2 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_gimbal.cpp': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': source file has been changed.
+
+[2024-10-26 17:11:23]	[done]
+	build successfully !
+
+[2024-10-26 17:29:10]	[info] incremental build: 12 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Core\Src\main.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\USB_DEVICE\App\usbd_cdc_if.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_booster.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_chassis.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_gimbal.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_dr16.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_minipc.cpp': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_referee.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_usb.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Task\tsk_config_and_callback.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+
+[2024-10-26 17:29:11]	compilation failed at : "d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_chassis.cpp", exit code: 1
+command: 
+  "d:\Embedded system\Tool\keil5\ARM\ARMCC\bin\armcc.exe" -c --cpp --apcs=interwork -I. -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../User/Chariot -I../User/Device -I../User/Interaction -I../User/Middleware/Algorithm -I../User/Middleware/Driver -I../User/Task -I../Drivers/CMSIS/DSP/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Core/Inc -IRTE/_infantry -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__TARGET_FPU_VFP -D__FPU_PRESENT="1" --cpu Cortex-M4.fp --li -O0 --split_sections -W --cpp11 -g -o .\..\MDK-ARM\infantry\.obj\__\User\Chariot\crt_chassis.o --no_depend_system_headers --depend .\..\MDK-ARM\infantry\.obj\__\User\Chariot\crt_chassis.d .\..\User\Chariot\crt_chassis.cpp
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+"../User/Device/dvc_minipc.h", line 538: Error:  #302: function "Class_MiniPC::Set_Gimbal_Now_Roll_Angle"  has already been defined
+  void Class_MiniPC::Set_Gimbal_Now_Roll_Angle(float __Gimbal_Now_Relative_Angle)
+                     ^
+.\..\Core\Src\main.c: 0 warnings, 1 error
+"../User/Device/dvc_minipc.h", line 538: Error:  #302: function "Class_MiniPC::Set_Gimbal_Now_Roll_Angle"  has already been defined
+  void Class_MiniPC::Set_Gimbal_Now_Roll_Angle(float __Gimbal_Now_Relative_Angle)
+                     ^
+.\..\USB_DEVICE\App\usbd_cdc_if.c: 0 warnings, 1 error
+"../User/Device/dvc_minipc.h", line 538: Error:  #302: function "Class_MiniPC::Set_Gimbal_Now_Roll_Angle"  has already been defined
+  void Class_MiniPC::Set_Gimbal_Now_Roll_Angle(float __Gimbal_Now_Relative_Angle)
+                     ^
+.\..\User\Chariot\crt_booster.cpp: 0 warnings, 1 error
+"../User/Device/dvc_minipc.h", line 538: Error:  #302: function "Class_MiniPC::Set_Gimbal_Now_Roll_Angle"  has already been defined
+  void Class_MiniPC::Set_Gimbal_Now_Roll_Angle(float __Gimbal_Now_Relative_Angle)
+                     ^
+.\..\User\Chariot\crt_chassis.cpp: 0 warnings, 1 error
+
+[2024-10-26 17:29:35]	[info] incremental build: 12 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Core\Src\main.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\USB_DEVICE\App\usbd_cdc_if.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_booster.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_chassis.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_gimbal.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_dr16.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_minipc.cpp': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_referee.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_usb.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Task\tsk_config_and_callback.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+
+[2024-10-26 17:29:37]	compilation failed at : "d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp", exit code: 1
+command: 
+  "d:\Embedded system\Tool\keil5\ARM\ARMCC\bin\armcc.exe" -c --cpp --apcs=interwork -I. -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../User/Chariot -I../User/Device -I../User/Interaction -I../User/Middleware/Algorithm -I../User/Middleware/Driver -I../User/Task -I../Drivers/CMSIS/DSP/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Core/Inc -IRTE/_infantry -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__TARGET_FPU_VFP -D__FPU_PRESENT="1" --cpu Cortex-M4.fp --li -O0 --split_sections -W --cpp11 -g -o .\..\MDK-ARM\infantry\.obj\__\User\Interaction\ita_chariot.o --no_depend_system_headers --depend .\..\MDK-ARM\infantry\.obj\__\User\Interaction\ita_chariot.d .\..\User\Interaction\ita_chariot.cpp
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\User\Interaction\ita_chariot.cpp", line 219: Error:  #135: class "Class_MiniPC"  has no member "Set"
+      MiniPC.Set
+             ^
+".\..\User\Interaction\ita_chariot.cpp", line 225: Error:  #65: expected a ";"
+      if (DR16.Get_DR16_Status() != DR16_Status_DISABLE && DR16.Get_Left_Switch() == DR16_Switch_Status_UP)
+      ^
+.\..\User\Interaction\ita_chariot.cpp: 0 warnings, 2 errors
+
+[2024-10-26 17:30:12]	[info] incremental build: 2 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Task\tsk_config_and_callback.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+
+[2024-10-26 17:30:12]	compilation failed at : "d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp", exit code: 1
+command: 
+  "d:\Embedded system\Tool\keil5\ARM\ARMCC\bin\armcc.exe" -c --cpp --apcs=interwork -I. -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../User/Chariot -I../User/Device -I../User/Interaction -I../User/Middleware/Algorithm -I../User/Middleware/Driver -I../User/Task -I../Drivers/CMSIS/DSP/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Core/Inc -IRTE/_infantry -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__TARGET_FPU_VFP -D__FPU_PRESENT="1" --cpu Cortex-M4.fp --li -O0 --split_sections -W --cpp11 -g -o .\..\MDK-ARM\infantry\.obj\__\User\Interaction\ita_chariot.o --no_depend_system_headers --depend .\..\MDK-ARM\infantry\.obj\__\User\Interaction\ita_chariot.d .\..\User\Interaction\ita_chariot.cpp
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\User\Interaction\ita_chariot.cpp", line 219: Error:  #300: a pointer to a bound function may only be used to call the function
+      MiniPC.Set_Gimbal_Now_Relative_Angle = relative_angle;
+             ^
+.\..\User\Interaction\ita_chariot.cpp: 0 warnings, 1 error
+
+[2024-10-26 17:30:56]	[info] incremental build: 2 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Task\tsk_config_and_callback.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+
+[2024-10-26 17:30:58]	[done]
+	build successfully !
+
+[2024-10-26 17:32:41]	[info] incremental build: 2 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_minipc.cpp': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': source file has been changed.
+
+[2024-10-26 17:32:43]	[done]
+	build successfully !
+
+[2024-10-26 17:43:57]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_minipc.cpp': source file has been changed.
+
+[2024-10-26 17:43:59]	[done]
+	build successfully !
+
+[2024-10-26 17:46:31]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_minipc.cpp': source file has been changed.
+
+[2024-10-26 17:46:32]	[done]
+	build successfully !
+
+[2024-10-26 18:20:56]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': source file has been changed.
+
+[2024-10-26 18:20:58]	[done]
+	build successfully !
+
+[2024-10-26 18:35:48]	[done]
+	build successfully !
+
+[2024-10-26 18:59:09]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': source file has been changed.
+
+[2024-10-26 18:59:11]	[done]
+	build successfully !
+
+[2024-10-26 21:58:58]	[info] incremental build: 2 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_gimbal.cpp': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': source file has been changed.
+
+[2024-10-26 21:59:00]	[done]
+	build successfully !
+
+[2024-10-26 22:22:02]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': source file has been changed.
+
+[2024-10-26 22:22:03]	[done]
+	build successfully !
+
+[2024-10-26 22:23:00]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': source file has been changed.
+
+[2024-10-26 22:23:01]	[done]
+	build successfully !
+
+[2024-10-26 23:02:14]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': source file has been changed.
+
+[2024-10-26 23:02:15]	[done]
+	build successfully !
+
+[2024-10-26 23:02:53]	[done]
+	build successfully !
+
+[2024-10-26 23:24:53]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': source file has been changed.
+
+[2024-10-26 23:24:55]	[done]
+	build successfully !
+
+[2024-10-27 16:22:02]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': source file has been changed.
+
+[2024-10-27 16:22:04]	[done]
+	build successfully !
+
+[2024-11-02 19:12:40]	[info] incremental build: 2 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': source file has been changed.
+
+[2024-11-02 19:12:43]	[done]
+	build successfully !
+
+[2024-11-03 19:34:50]	[info] incremental build: 2 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_gimbal.cpp': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': source file has been changed.
+
+[2024-11-03 19:34:52]	[done]
+	build successfully !
+
+[2024-11-03 20:05:16]	[info] incremental build: 2 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_gimbal.cpp': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': source file has been changed.
+
+[2024-11-03 20:05:18]	[done]
+	build successfully !
+
+[2024-11-03 20:20:02]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_gimbal.cpp': source file has been changed.
+
+[2024-11-03 20:20:04]	[done]
+	build successfully !
+
+[2024-11-03 20:26:35]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_gimbal.cpp': source file has been changed.
+
+[2024-11-03 20:26:36]	[done]
+	build successfully !
+
+[2024-11-03 20:35:47]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_gimbal.cpp': source file has been changed.
+
+[2024-11-03 20:35:49]	[done]
+	build successfully !
+
+[2024-11-12 19:25:26]	[info] incremental build: 3 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_booster.cpp': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': source file has been changed.
+
+[2024-11-12 19:25:29]	[done]
+	build successfully !
+
+[2024-11-12 20:27:40]	[done]
+	build successfully !
+
+[2024-11-12 20:36:07]	[done]
+	build successfully !
+
+[2024-11-12 20:36:24]	[done]
+	build successfully !
+
+[2024-11-12 20:37:42]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': source file has been changed.
+
+[2024-11-12 20:37:44]	[done]
+	build successfully !
+
+[2024-11-30 12:37:15]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_gimbal.cpp': source file has been changed.
+
+[2024-11-30 12:37:15]	compilation failed at : "d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_gimbal.cpp", exit code: 1
+command: 
+  "D:\Embedded system\Tool\keil5\ARM\ARMCC\bin\armcc.exe" -c --cpp --apcs=interwork -I. -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../User/Chariot -I../User/Device -I../User/Interaction -I../User/Middleware/Algorithm -I../User/Middleware/Driver -I../User/Task -I../Drivers/CMSIS/DSP/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Core/Inc -IRTE/_infantry -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__TARGET_FPU_VFP -D__FPU_PRESENT="1" --cpu Cortex-M4.fp --li -O0 --split_sections -W --cpp11 -g -o .\..\MDK-ARM\infantry\.obj\__\User\Chariot\crt_gimbal.o --no_depend_system_headers --depend .\..\MDK-ARM\infantry\.obj\__\User\Chariot\crt_gimbal.d .\..\User\Chariot\crt_gimbal.cpp
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\User\Chariot\crt_gimbal.cpp", line 396: Error:  #18: expected a ")"
+          {   
+          ^
+".\..\User\Chariot\crt_gimbal.cpp", line 438: Error:  #127: expected a statement
+                  }
+                  ^
+".\..\User\Chariot\crt_gimbal.cpp", line 439: Error:  #127: expected a statement
+                  else
+                  ^
+".\..\User\Chariot\crt_gimbal.cpp", line 456: Error:  #169: expected a declaration
+              else if (MiniPC->Get_Gimbal_Control_Mode() == 1) // 云台非巡航状�?
+              ^
+".\..\User\Chariot\crt_gimbal.cpp", line 481: Error:  #77-D: this declaration has no storage class or type specifier
+                      Math_Constrain(&Target_Pitch_Angle, Min_Pitch_Rad, Max_Pitch_Rad); // pitch限位
+                      ^
+".\..\User\Chariot\crt_gimbal.cpp", line 481: Error:  #147: declaration is incompatible with function template "void Math_Constrain(Type *, Type, Type)"  (declared at line 65 of "../User/Middleware/Driver/drv_math.h")
+                      Math_Constrain(&Target_Pitch_Angle, Min_Pitch_Rad, Max_Pitch_Rad); // pitch限位
+                      ^
+".\..\User\Chariot\crt_gimbal.cpp", line 481: Error:  #20: identifier "Target_Pitch_Angle" is undefined
+                      Math_Constrain(&Target_Pitch_Angle, Min_Pitch_Rad, Max_Pitch_Rad); // pitch限位
+                                      ^
+".\..\User\Chariot\crt_gimbal.cpp", line 481: Error:  #18: expected a ")"
+                      Math_Constrain(&Target_Pitch_Angle, Min_Pitch_Rad, Max_Pitch_Rad); // pitch限位
+                                                        ^
+".\..\User\Chariot\crt_gimbal.cpp", line 482: Error:  #77-D: this declaration has no storage class or type specifier
+                      Motor_Pitch.Set_Target_Angle(Target_Pitch_Angle);           // 设置pitch轴角�?
+                      ^
+".\..\User\Chariot\crt_gimbal.cpp", line 482: Error:  #65: expected a ";"
+                      Motor_Pitch.Set_Target_Angle(Target_Pitch_Angle);           // 设置pitch轴角�?
+                                 ^
+".\..\User\Chariot\crt_gimbal.cpp", line 483: Error:  #169: expected a declaration
+                  }
+                  ^
+".\..\User\Chariot\crt_gimbal.cpp", line 507: Error:  #77-D: this declaration has no storage class or type specifier
+                      Motor_Yaw.Set_Target_Omega(Target_Yaw_Omega);
+                      ^
+".\..\User\Chariot\crt_gimbal.cpp", line 507: Error:  #65: expected a ";"
+                      Motor_Yaw.Set_Target_Omega(Target_Yaw_Omega);
+                               ^
+".\..\User\Chariot\crt_gimbal.cpp", line 509: Error:  #77-D: this declaration has no storage class or type specifier
+                      Target_Pitch_Angle = 0.0f;                                         // 设置pitch�?0°
+                      ^
+".\..\User\Chariot\crt_gimbal.cpp", line 510: Error:  #77-D: this declaration has no storage class or type specifier
+                      Math_Constrain(&Target_Pitch_Angle, Min_Pitch_Rad, Max_Pitch_Rad); // pitch限位
+                      ^
+".\..\User\Chariot\crt_gimbal.cpp", line 510: Error:  #247: variable "Math_Constrain"  has already been defined
+                      Math_Constrain(&Target_Pitch_Angle, Min_Pitch_Rad, Max_Pitch_Rad); // pitch限位
+                      ^
+".\..\User\Chariot\crt_gimbal.cpp", line 510: Error:  #144: a value of type "int *" cannot be used to initialize an entity of type "int"
+                      Math_Constrain(&Target_Pitch_Angle, Min_Pitch_Rad, Max_Pitch_Rad); // pitch限位
+                                     ^
+".\..\User\Chariot\crt_gimbal.cpp", line 510: Error:  #18: expected a ")"
+                      Math_Constrain(&Target_Pitch_Angle, Min_Pitch_Rad, Max_Pitch_Rad); // pitch限位
+                                                        ^
+".\..\User\Chariot\crt_gimbal.cpp", line 511: Error:  #77-D: this declaration has no storage class or type specifier
+                      Motor_Pitch.Set_Target_Angle(Target_Pitch_Angle);           // 设置pitch轴角�?
+                      ^
+".\..\User\Chariot\crt_gimbal.cpp", line 511: Error:  #247: variable "Motor_Pitch"  has already been defined
+                      Motor_Pitch.Set_Target_Angle(Target_Pitch_Angle);           // 设置pitch轴角�?
+                      ^
+".\..\User\Chariot\crt_gimbal.cpp", line 511: Error:  #65: expected a ";"
+                      Motor_Pitch.Set_Target_Angle(Target_Pitch_Angle);           // 设置pitch轴角�?
+                                 ^
+".\..\User\Chariot\crt_gimbal.cpp", line 512: Error:  #169: expected a declaration
+                  }
+                  ^
+.\..\User\Chariot\crt_gimbal.cpp: 0 warnings, 22 errors
+
+[2024-11-30 12:37:41]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_gimbal.cpp': source file has been changed.
+
+[2024-11-30 12:37:41]	compilation failed at : "d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_gimbal.cpp", exit code: 1
+command: 
+  "D:\Embedded system\Tool\keil5\ARM\ARMCC\bin\armcc.exe" -c --cpp --apcs=interwork -I. -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../User/Chariot -I../User/Device -I../User/Interaction -I../User/Middleware/Algorithm -I../User/Middleware/Driver -I../User/Task -I../Drivers/CMSIS/DSP/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Core/Inc -IRTE/_infantry -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__TARGET_FPU_VFP -D__FPU_PRESENT="1" --cpu Cortex-M4.fp --li -O0 --split_sections -W --cpp11 -g -o .\..\MDK-ARM\infantry\.obj\__\User\Chariot\crt_gimbal.o --no_depend_system_headers --depend .\..\MDK-ARM\infantry\.obj\__\User\Chariot\crt_gimbal.d .\..\User\Chariot\crt_gimbal.cpp
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\User\Chariot\crt_gimbal.cpp", line 500: Error:  #20: identifier "Pre_used" is undefined
+                      云台工作 (Pre_used)
+                              ^
+".\..\User\Chariot\crt_gimbal.cpp", line 500: Error:  #20: identifier "\u6d5c\u621d\u5f74\u5bb8\u30e4\u7d94" is undefined
+                      云台工作 (Pre_used)
+                      ^
+".\..\User\Chariot\crt_gimbal.cpp", line 501: Error:  #65: expected a ";"
+                      Motor_Yaw.Set_DJI_Motor_Control_Method(DJI_Motor_Control_Method_IMU_OMEGA);
+                      ^
+.\..\User\Chariot\crt_gimbal.cpp: 0 warnings, 3 errors
+
+[2024-11-30 12:38:09]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_gimbal.cpp': source file has been changed.
+
+[2024-11-30 12:38:11]	[done]
+	build successfully !
+
+[2024-11-30 12:52:13]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_gimbal.cpp': source file has been changed.
+
+[2024-11-30 12:52:15]	[done]
+	build successfully !
+
+[2024-11-30 12:53:43]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_booster.cpp': source file has been changed.
+
+[2024-11-30 12:53:44]	[done]
+	build successfully !
+
+[2024-11-30 14:09:30]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_minipc.cpp': source file has been changed.
+
+[2024-11-30 14:09:32]	[done]
+	build successfully !
+
+[2024-11-30 14:36:37]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_minipc.cpp': source file has been changed.
+
+[2024-11-30 14:36:39]	[done]
+	build successfully !
+
+[2024-11-30 15:09:19]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_minipc.cpp': source file has been changed.
+
+[2024-11-30 15:09:21]	[done]
+	build successfully !
+
+[2024-11-30 15:12:59]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_minipc.cpp': source file has been changed.
+
+[2024-11-30 15:13:01]	[done]
+	build successfully !
+
+[2024-11-30 15:17:08]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_gimbal.cpp': source file has been changed.
+
+[2024-11-30 15:17:09]	[done]
+	build successfully !
+
+[2024-11-30 21:50:51]	[info] incremental build: 2 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Task\tsk_config_and_callback.cpp': source file has been changed.
+
+[2024-11-30 21:50:53]	[done]
+	build successfully !
+
+[2024-11-30 22:39:02]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Task\tsk_config_and_callback.cpp': source file has been changed.
+
+[2024-11-30 22:39:03]	[done]
+	build successfully !
+
+[2024-11-30 22:39:18]	[done]
+	build successfully !
+
+[2024-11-30 23:08:44]	[info] incremental build: 2 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Task\tsk_config_and_callback.cpp': source file has been changed.
+
+[2024-11-30 23:08:46]	[done]
+	build successfully !
+
+[2024-12-05 19:29:08]	[info] incremental build: 4 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_booster.cpp': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Task\tsk_config_and_callback.cpp': source file has been changed.
+
+[2024-12-05 19:29:12]	[done]
+	build successfully !
+
+[2024-12-06 21:44:44]	[done]
+	build successfully !
+
+[2024-12-06 22:08:35]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': source file has been changed.
+
+[2024-12-06 22:08:37]	[done]
+	build successfully !
+
+[2024-12-06 22:30:39]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': source file has been changed.
+
+[2024-12-06 22:30:40]	[done]
+	build successfully !
+
+[2024-12-06 22:31:06]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': source file has been changed.
+
+[2024-12-06 22:31:08]	[done]
+	build successfully !
+
+[2024-12-06 22:36:32]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': source file has been changed.
+
+[2024-12-06 22:36:34]	[done]
+	build successfully !
+
+[2024-12-06 23:01:19]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_minipc.cpp': source file has been changed.
+
+[2024-12-06 23:01:21]	[done]
+	build successfully !
+
+[2024-12-06 23:09:25]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_minipc.cpp': source file has been changed.
+
+[2024-12-06 23:09:26]	[done]
+	build successfully !
+
+[2024-12-10 16:39:27]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': source file has been changed.
+
+[2024-12-10 16:39:29]	[done]
+	build successfully !
+
+[2024-12-10 17:23:25]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': source file has been changed.
+
+[2024-12-10 17:23:26]	[done]
+	build successfully !
+
+[2024-12-10 19:01:27]	[info] incremental build: 2 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': source file has been changed.
+
+[2024-12-10 19:01:30]	[done]
+	build successfully !
+
+[2024-12-19 16:02:55]	[info] incremental build: 12 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Core\Src\main.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\USB_DEVICE\App\usbd_cdc_if.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_booster.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_chassis.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_gimbal.cpp': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_dr16.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_minipc.cpp': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_referee.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_usb.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Task\tsk_config_and_callback.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_minipc.h' has been changed.
+
+[2024-12-19 16:02:58]	[done]
+	build successfully !
+
+[2024-12-19 17:43:34]	[info] incremental build: 11 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Core\Src\main.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_gimbal.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\USB_DEVICE\App\usbd_cdc_if.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_gimbal.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_booster.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_gimbal.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_gimbal.cpp': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_dr16.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_gimbal.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_minipc.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_gimbal.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_referee.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_gimbal.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_gimbal.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_usb.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_gimbal.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Task\tsk_config_and_callback.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_gimbal.h' has been changed.
+
+[2024-12-19 17:43:37]	[done]
+	build successfully !
+
+[2024-12-19 20:55:15]	[info] incremental build: 12 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Core\Src\main.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_gimbal.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\USB_DEVICE\App\usbd_cdc_if.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_gimbal.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_booster.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_gimbal.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_gimbal.cpp': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_dr16.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_gimbal.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_minipc.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_gimbal.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_referee.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_gimbal.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_gimbal.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_usb.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_gimbal.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Task\tsk_config_and_callback.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_gimbal.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\startup_stm32f407xx.s': source file has been changed.
+
+[2024-12-19 20:55:18]	[done]
+	build successfully !
+
+[2024-12-19 20:56:04]	[done]
+	build successfully !
+
+[2024-12-19 20:56:31]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_gimbal.cpp': source file has been changed.
+
+[2024-12-19 20:56:32]	[done]
+	build successfully !
+
+[2024-12-19 20:58:54]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_gimbal.cpp': source file has been changed.
+
+[2024-12-19 20:58:55]	[done]
+	build successfully !
+
+[2024-12-19 21:01:28]	[done]
+	build successfully !
+
+[2024-12-19 21:03:48]	[info] incremental build: 11 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Core\Src\main.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_gimbal.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\USB_DEVICE\App\usbd_cdc_if.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_gimbal.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_booster.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_gimbal.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_gimbal.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_gimbal.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_dr16.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_gimbal.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_minipc.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_gimbal.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_referee.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_gimbal.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_gimbal.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_gimbal.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_usb.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_gimbal.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Task\tsk_config_and_callback.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Chariot\crt_gimbal.h' has been changed.
+
+[2024-12-19 21:03:51]	[done]
+	build successfully !
+
+[2024-12-19 21:28:35]	[info] incremental build: 14 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\Core\Src\main.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_djimotor.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\USB_DEVICE\App\usbd_cdc_if.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_djimotor.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_booster.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_djimotor.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_chassis.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_djimotor.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Chariot\crt_gimbal.cpp': source file has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_djimotor.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_djimotor.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_dr16.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_djimotor.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_minipc.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_djimotor.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Device\dvc_referee.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_djimotor.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_djimotor.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Algorithm\alg_power_limit.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_djimotor.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_can.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_djimotor.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Middleware\Driver\drv_usb.c': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_djimotor.h' has been changed.
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Task\tsk_config_and_callback.cpp': dependence 'd:\Embedded system\Project\RM\M57\M57-GIMBAL\MDK-ARM\..\User\Device\dvc_djimotor.h' has been changed.
+
+[2024-12-19 21:28:39]	[done]
+	build successfully !
+

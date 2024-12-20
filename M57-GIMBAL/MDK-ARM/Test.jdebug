@@ -5,7 +5,7 @@
 **********************************************************************
 
 File          : D:/Embedded system/Project/RM/M57/M57-GIMBAL/MDK-ARM/Test.jdebug
-Created       : 24 Sep 2024 18:16
+Created       : 6 Dec 2024 23:13
 Ozone Version : V3.24
 */
 
@@ -25,7 +25,7 @@ void OnProjectLoad (void) {
   Project.AddPathSubstitute ("D:/Embedded system/Project/RM/M57/M57-GIMBAL/MDK-ARM", "$(ProjectDir)");
   Project.AddPathSubstitute ("d:/embedded system/project/rm/m57/m57-gimbal/mdk-arm", "$(ProjectDir)");
   Project.SetDevice ("Cortex-M4");
-  Project.SetHostIF ("USB", "123456");
+  Project.SetHostIF ("USB", "69403441");
   Project.SetTargetIF ("SWD");
   Project.SetTIFSpeed ("4 MHz");
   Project.AddSvdFile ("$(InstallDir)/Config/CPU/Cortex-M4F.svd");

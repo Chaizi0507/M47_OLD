@@ -64,7 +64,7 @@ void Class_MiniPC::Output()
     Data_MCU_To_NUC.Gimbal_Now_Pitch_Angle         = Now_Angle_Pitch;
     Data_MCU_To_NUC.Gimbal_Now_Yaw_Angle           = Now_Angle_Yaw;
     Data_MCU_To_NUC.Gimbal_Now_Roll_Angle          = Now_Angle_Roll;
-    Data_MCU_To_NUC.Chassis_Now_yaw_Angle          = 0;
+    Data_MCU_To_NUC.Chassis_Now_yaw_Angle          = Now_Angle_Yaw + Now_Angle_Relative;//relative is negative in Counter Clockwise,so plus rather minus
     Data_MCU_To_NUC.Game_process                   = can_rx1.game_process;
     Data_MCU_To_NUC.Self_blood                     = can_rx1.self_blood;
     Data_MCU_To_NUC.Self_Outpost_HP                = can_rx1.self_outpost_HP;
@@ -182,6 +182,7 @@ void Class_MiniPC::Append_CRC16_Check_Sum(uint8_t *pchMessage, uint32_t dwLength
 
     pchMessage[dwLength - 2] = (uint8_t)(w_crc & 0x00ff);
     pchMessage[dwLength - 1] = (uint8_t)((w_crc >> 8) & 0x00ff);
+
 }
 
 /**
@@ -247,12 +248,14 @@ float Class_MiniPC::calc_pitch(float x, float y, float z)
     float temp_hight;
     temp_hight = z;
     float pitch_t,pitch;
-	pitch = atan2f(z, sqrtf(x*x+y*y));
+	pitch = RAD_TO_ANGEL(atan2f(z, sqrtf(x*x+y*y)));
 
-    if(can_rx3.initial_speed < 20 || can_rx3.initial_speed>30)  can_rx3.initial_speed = 24;
+
+//    if(can_rx3.initial_speed < 20 || can_rx3.initial_speed>30)  can_rx3.initial_speed = 24;
+//    can_rx3.initial_speed = 20;
    // 使用重力加速度模型迭代更新俯仰角
-   for (uint8_t i = 0; i < 20; i++)
-   {
+    for (uint8_t i = 0; i < 20; i++)
+    {
        pitch = atanf(temp_hight/sqrtf(x*x+y*y));
        float v_x = (can_rx3.initial_speed) * cosf(pitch);
        float v_y = (can_rx3.initial_speed) * sinf(pitch);
@@ -283,15 +286,15 @@ float Class_MiniPC::calc_pitch(float x, float y, float z)
  * @return 计算得到的目标角（以角度制表示）
  */
 
-uint8_t Data_Sign = 0;
+uint8_t Auto_aim_flag = 0;
 void Class_MiniPC::Auto_aim(float x, float y, float z, float *yaw, float *pitch, float *distance, float *error)
 {
     if(x == 0 && y == 0 && z == 0)
-        Data_Sign = 1;
+        Auto_aim_flag = 1;
     else
-        Data_Sign = 0;
-    *yaw = -calc_yaw(x, y, z);
-    *pitch = -calc_pitch(x, y, z);
+        Auto_aim_flag = 0;
+    *yaw = calc_yaw(x, y, z);//第一次标- 现改为正
+    *pitch = calc_pitch(x, y, z);//第一次标- 现改为正
     *distance = calc_distance(x, y, z);
     *error = Calc_Error(x,y,z,Now_Angle_Yaw,Now_Angle_Pitch); //这里的z为上位机直接发的z，不是弹道解算后的z1，判断时存在一定误差（瞄准误差允许范围为5cm时，不影响10m内打弹）
 }

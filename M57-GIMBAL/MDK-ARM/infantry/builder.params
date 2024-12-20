@@ -2,8 +2,8 @@
     "name": "infantry",
     "target": "infantry",
     "toolchain": "AC5",
-    "toolchainLocation": "d:\\Embedded system\\Tool\\keil5\\ARM\\ARMCC",
-    "toolchainCfgFile": "c:\\Users\\Chai\\.vscode\\extensions\\cl.eide-3.20.0\\res\\data\\models\\win32/arm.v5.model.json",
+    "toolchainLocation": "D:\\Embedded system\\Tool\\keil5\\ARM\\ARMCC",
+    "toolchainCfgFile": "c:\\Users\\Chai\\.vscode\\extensions\\cl.eide-3.20.1\\res\\data\\models\\win32/arm.v5.model.json",
     "buildMode": "fast|multhread",
     "showRepathOnLog": true,
     "threadNum": 16,
@@ -143,7 +143,7 @@
         "afterBuildTasks": [
             {
                 "name": "axf to elf",
-                "command": "axf2elf -d \"d:\\Embedded system\\Tool\\keil5\\ARM\\ARMCC\" -i \"${outDir}\\infantry.axf\" -o \"${outDir}\\infantry.elf\" > \"${outDir}\\axf2elf.log\""
+                "command": "axf2elf -d \"D:\\Embedded system\\Tool\\keil5\\ARM\\ARMCC\" -i \"${outDir}\\infantry.axf\" -o \"${outDir}\\infantry.elf\" > \"${outDir}\\axf2elf.log\""
             }
         ],
         "global": {
@@ -192,17 +192,17 @@
         "SYS_PathSep": ";",
         "SYS_PathSeparator": ";",
         "SYS_EOL": "\r\n",
-        "EIDE_BUILDER_DIR": "c:\\Users\\Chai\\.vscode\\extensions\\cl.eide-3.20.0\\res\\tools\\win32\\unify_builder",
+        "EIDE_BUILDER_DIR": "c:\\Users\\Chai\\.vscode\\extensions\\cl.eide-3.20.1\\res\\tools\\win32\\unify_builder",
         "EIDE_BINARIES_VER": "12.0.1",
         "EIDE_MSYS": "C:\\Users\\Chai\\.eide\\bin\\builder\\msys\\bin",
         "EIDE_TOOL_OPENOCD": ".",
-        "ToolchainRoot": "d:\\Embedded system\\Tool\\keil5\\ARM\\ARMCC"
+        "ToolchainRoot": "D:\\Embedded system\\Tool\\keil5\\ARM\\ARMCC"
     },
     "sysPaths": [],
     "sha": {
         "c/cpp-defines": "0178c6535f763739713d81c6ee26e46f",
         "beforeBuildTasks": "d751713988987e9331980363e24189ce",
-        "afterBuildTasks": "2fdf391cf598bddb9aabf749f992aecb",
+        "afterBuildTasks": "32bc40ff23f5196d03e4d5beabc8005e",
         "global": "a620fd78ce68cb35fdf638caa176e530",
         "c/cpp-compiler": "083a8ddb6d4c642d90bc4776406e7b63",
         "asm-compiler": "99914b932bd37a50b983c5e7c90ae93b",

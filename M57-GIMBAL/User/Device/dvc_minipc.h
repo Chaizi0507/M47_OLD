@@ -198,7 +198,7 @@ struct Struct_MiniPC_Tx_Data
     // uint8_t Self_Color : 1;        // 自身颜色 红蓝方    
     
     uint16_t Remaining_Time;       // 比赛剩余时间
-    uint8_t Color_Invincible_State;      // 敌对方无敌状态
+    uint8_t Color_Invincible_State;      // 敌对方无敌状态/自身颜色
     uint16_t crc16;
 } __attribute__((packed));
 
@@ -258,6 +258,7 @@ public:
     inline float Get_Now_Pitch_Angle();
     inline float Get_Now_Yaw_Angle();
     inline float Get_Now_Roll_Angle();
+    inline float Get_Now_Relative_Angle();
 
     inline uint8_t Get_Target_Invincible_State();
     inline Enum_MiniPC_Chassis_Control_Mode Get_Chassis_Control_Mode();
@@ -272,6 +273,7 @@ public:
     inline void Set_Gimbal_Now_Yaw_Omega(float __Gimbal_Now_Yaw_Omega);
     inline void Set_Gimbal_Now_Pitch_Angle(float __Gimbal_Now_Pitch_Angle);
     inline void Set_Gimbal_Now_Roll_Angle(float __Gimbal_Now_Roll_Angle);
+    inline void Set_Gimbal_Now_Relative_Angle(float __Gimbal_Now_Relative_Angle);
     inline void Set_Armor_Attacked_ID(uint8_t __Armor_Attacked_ID);
     inline void Set_Armor_Attacked_Ammo_Status(Enum_MiniPC_Data_Status __Armor_Attacked_Ammo_Status);
     inline void Set_Self_Color(Enum_MiniPC_Self_Color __Self_Color);
@@ -334,6 +336,7 @@ protected:
     float Now_Angle_Roll;
     float Now_Angle_Pitch;
     float Now_Angle_Yaw;
+    float Now_Angle_Relative;
 
     float Rx_Angle_Roll;
     float Rx_Angle_Pitch;
@@ -375,6 +378,11 @@ float Class_MiniPC::Get_Now_Roll_Angle()
     return (Now_Angle_Roll);
 }
 
+float Class_MiniPC::Get_Now_Relative_Angle()
+{
+    return (Now_Angle_Relative);
+}
+
 float Class_MiniPC::Get_Rx_Pitch_Angle()
 {
     return (Rx_Angle_Pitch);
@@ -384,6 +392,7 @@ float Class_MiniPC::Get_Rx_Yaw_Angle()
 {
     return (Rx_Angle_Yaw);
 }
+
 
 /**
  * @brief 获取迷你主机状态
@@ -521,6 +530,15 @@ void Class_MiniPC::Set_Gimbal_Now_Roll_Angle(float __Gimbal_Now_Roll_Angle)
     Now_Angle_Roll = __Gimbal_Now_Roll_Angle;
 }
 
+/**
+ * @brief 设定云台当前角度roll
+ *
+ * @param __Gimbal_Now_Roll_Angle 云台当前角度roll
+ */
+void Class_MiniPC::Set_Gimbal_Now_Relative_Angle(float __Gimbal_Now_Relative_Angle)
+{
+    Now_Angle_Relative = __Gimbal_Now_Relative_Angle;
+}
 // /**
 //  * @brief 设定己方颜色
 //  *

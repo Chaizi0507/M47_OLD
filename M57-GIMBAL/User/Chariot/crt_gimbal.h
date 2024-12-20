@@ -193,7 +193,7 @@ float Class_Gimbal_Pitch_Motor_LK6010::Get_True_Angle_Pitch()
     return (True_Angle_Pitch);
 }
 
-#define CRUISE_PITCH 0.7f
+#define CRUISE_PITCH 7.0f
 /**
  * @brief Specialized, 云台类
  *
@@ -234,7 +234,7 @@ public:
   
 protected:
     // 初始化相关常量
-    float Gimbal_Head_Angle = 2.61422253;
+    float Gimbal_Head_Angle = 4.13611698;
     // 常量
     //  yaw轴最小值
     float Min_Yaw_Angle = -180.0f;

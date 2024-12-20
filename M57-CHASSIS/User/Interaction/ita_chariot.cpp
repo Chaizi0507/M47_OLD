@@ -81,7 +81,7 @@ void Class_Chariot::Init(float __DR16_Dead_Zone)
 #ifdef CHASSIS
 // 控制类型字节
 uint8_t control_type;
-
+uint16_t test = 0;
 void Class_Chariot::CAN_Chassis_Rx_Gimbal_Callback()
 {
     
@@ -108,18 +108,22 @@ void Class_Chariot::CAN_Chassis_Rx_Gimbal_Callback()
     // {
     //     chassis_omega = 0;
     // }
+    Gimbal_Alive_Flag++;
     int16_t chassis_velocity_x, chassis_velocity_y, chassis_velocity_w;
+		
     Enum_Chassis_Control_Type chassis_control_type;
 
+    //Can receive data
     memcpy(&chassis_velocity_x, CAN_Manage_Object->Rx_Buffer.Data, sizeof(int16_t));
     memcpy(&chassis_velocity_y, CAN_Manage_Object->Rx_Buffer.Data + 2, sizeof(int16_t));
     memcpy(&chassis_velocity_w, CAN_Manage_Object->Rx_Buffer.Data + 4, sizeof(int16_t));
     memcpy(&chassis_control_type, CAN_Manage_Object->Rx_Buffer.Data + 6, sizeof(int8_t));
     control_type = chassis_control_type;
+		test = chassis_velocity_w;
     // 设定底盘目标速度
-    Chassis.Set_Target_Velocity_X(float(chassis_velocity_x * TRANS_V));
-    Chassis.Set_Target_Velocity_Y(float(chassis_velocity_y * TRANS_V));
-    Chassis.Set_Target_Omega(float(chassis_velocity_w));
+    Chassis.Set_Target_Velocity_X(Math_Int_To_Float(chassis_velocity_x ,-450,450,-4.0f,4.0f)/5);//test
+    Chassis.Set_Target_Velocity_Y(Math_Int_To_Float(chassis_velocity_y ,-450,450,-4.0f,4.0f)/5);//test
+    Chassis.Set_Target_Omega(Math_Int_To_Float(chassis_velocity_w, -200,200,-4.0f,4.0f));
     Chassis.Set_Chassis_Control_Type(chassis_control_type);
     //Chassis.Set_Target_Omega(chassis_omega);
 }
