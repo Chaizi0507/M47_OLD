@@ -248,11 +248,11 @@ float Class_MiniPC::calc_pitch(float x, float y, float z)
     float temp_hight;
     temp_hight = z;
     float pitch_t,pitch;
-	pitch = RAD_TO_ANGEL(atan2f(z, sqrtf(x*x+y*y)));
+	  pitch = RAD_TO_ANGEL(atan2f(z, sqrtf(x*x+y*y)));
 
 
 //    if(can_rx3.initial_speed < 20 || can_rx3.initial_speed>30)  can_rx3.initial_speed = 24;
-//    can_rx3.initial_speed = 20;
+    can_rx3.initial_speed = 20;
    // 使用重力加速度模型迭代更新俯仰角
     for (uint8_t i = 0; i < 20; i++)
     {
@@ -286,7 +286,7 @@ float Class_MiniPC::calc_pitch(float x, float y, float z)
  * @return 计算得到的目标角（以角度制表示）
  */
 
-uint8_t Auto_aim_flag = 0;
+uint8_t Auto_aim_flag = 1;
 void Class_MiniPC::Auto_aim(float x, float y, float z, float *yaw, float *pitch, float *distance, float *error)
 {
     if(x == 0 && y == 0 && z == 0)

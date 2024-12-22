@@ -124,12 +124,12 @@ void Class_Gimbal_Yaw_Motor_GM6020::Transform_Angle()
 float test_omega_pitch = -10;
 float test_omega_low_pass_pitch = -10;
 float test_Pitch_Angle = 0;
-    /**
-     * @brief TIM定时器中断计算回调函数
-     *
-     */
-    void
-    Class_Gimbal_Pitch_Motor_GM6020::TIM_PID_PeriodElapsedCallback()
+/**
+ * @brief TIM定时器中断计算回调函数
+ *
+ */
+void
+Class_Gimbal_Pitch_Motor_GM6020::TIM_PID_PeriodElapsedCallback()
 {
     switch (DJI_Motor_Control_Method)
     {
@@ -150,6 +150,10 @@ float test_Pitch_Angle = 0;
     break;
     case (DJI_Motor_Control_Method_IMU_OMEGA):
     {
+        PID_Omega.Set_K_P(24000.f);
+        PID_Omega.Set_K_I(15000.0f);
+        PID_Omega.Set_I_Out_Max(2500.0f);
+        PID_Omega.Set_Out_Max(5500.0f);
         PID_Omega.Set_Target(Target_Omega);
         if (IMU->Get_IMU_Status() == IMU_Status_DISABLE)
         {
@@ -158,15 +162,19 @@ float test_Pitch_Angle = 0;
         else
         {
             PID_Angle.Set_Now(RAD_TO_ANGEL(True_Rad_Pitch));
-            PID_Omega.Set_Now(RADPS_TO_RPM(True_Gyro_Pitch));
+            PID_Omega.Set_Now(True_Gyro_Pitch);
         }
         PID_Omega.TIM_Adjust_PeriodElapsedCallback();
-        Target_Torque = -PID_Omega.Get_Out();
-        Set_Out(Target_Torque);
+        Target_Torque = PID_Omega.Get_Out();
+        Set_Out(Target_Torque - Gravity_Compensate);
     }
     break;
     case (DJI_Motor_Control_Method_IMU_ANGLE):
     {
+        PID_Omega.Set_K_P(700.0f);
+        PID_Omega.Set_K_I(7000.0f);
+        PID_Omega.Set_I_Out_Max(25000.0f);
+			  PID_Omega.Set_Out_Max(25000.0f);
         // Target_Angle = test_Pitch_Angle;
         PID_Angle.Set_Target(Target_Angle);
 
@@ -199,7 +207,7 @@ float test_Pitch_Angle = 0;
         PID_Omega.TIM_Adjust_PeriodElapsedCallback();
 
         Target_Torque = PID_Omega.Get_Out();
-        Set_Out(Target_Torque + Gravity_Compensate);
+        Set_Out(Target_Torque - Gravity_Compensate);
     }
     break;
     default:
@@ -322,7 +330,7 @@ void Class_Gimbal::Init()
     Motor_Pitch.PID_Angle.Init(9.0f, 1.2f, 0.0f, 0.0f, 100, 100, 5, 11, 0.25, 0.001, 0.0);
     // Motor_Pitch.PID_Omega.Init(2200.0f, 3500.0f, 0.0f, 0.0f, Motor_Pitch.Get_Output_Max(), Motor_Pitch.Get_Output_Max());
     //Motor_Pitch.PID_Omega.Init(1800.0f, 500.0f, 0.0f, 0.0f, Motor_Pitch.Get_Output_Max(), Motor_Pitch.Get_Output_Max());
-    Motor_Pitch.PID_Omega.Init(700.0f, 9000.0f, 0.0f, 0.0f, Motor_Pitch.Get_Output_Max(), Motor_Pitch.Get_Output_Max(),3,7,4500);
+    Motor_Pitch.PID_Omega.Init(700.0f, 7000.0f, 0.0f, 0.0f, Motor_Pitch.Get_Output_Max(), Motor_Pitch.Get_Output_Max(),3,7,4500);
     Motor_Pitch.PID_Torque.Init(0.8f, 100.0f, 0.0f, 0.0f, Motor_Pitch.Get_Output_Max(), Motor_Pitch.Get_Output_Max());
     Motor_Pitch.IMU = &Boardc_BMI;
     Motor_Pitch.Init(&hcan1, DJI_Motor_ID_0x205, DJI_Motor_Control_Method_IMU_ANGLE, 3413);
@@ -333,7 +341,7 @@ void Class_Gimbal::Init()
  * @brief 输出到电机
  *
  */
-static float CRUISE_SPEED = 1.8f;
+static float CRUISE_SPEED = 0.9f;
 static float test_speed2 = -CRUISE_PITCH;
 static uint16_t delay_time = 0;
 float f_d;
@@ -341,6 +349,7 @@ extern uint8_t Auto_aim_flag;
 
 void Class_Gimbal::Output()
 {
+    Motor_Pitch.Set_Output_Max(25000);
     if (Gimbal_Control_Type == Gimbal_Control_Type_DISABLE)
     {
         // 云台失能
@@ -397,40 +406,19 @@ void Class_Gimbal::Output()
             if (MiniPC->Get_Gimbal_Control_Mode() == 0)
             {
                 Motor_Yaw.Set_DJI_Motor_Control_Method(DJI_Motor_Control_Method_IMU_OMEGA);
-                if (MiniPC->Get_Chassis_Target_Velocity_X() == 0 && MiniPC->Get_Chassis_Target_Velocity_Y() == 0)
-                {
-                    Motor_Pitch.Set_DJI_Motor_Control_Method(DJI_Motor_Control_Method_IMU_OMEGA);                   
+                Motor_Pitch.Set_DJI_Motor_Control_Method(DJI_Motor_Control_Method_IMU_OMEGA); 
+                if (MiniPC->Get_Chassis_Target_Velocity_X() == 0 && MiniPC->Get_Chassis_Target_Velocity_Y() == 0)               
                     Motor_Yaw.Set_Target_Omega(CRUISE_SPEED); // 设定yaw轴速度
-                    if (Motor_Pitch.Get_True_Angle_Pitch() >= 0) // 计算pitch轴速度
-                        test_speed2 = CRUISE_PITCH;//pid输出值是反的，为了暂时不影响yaw这里取反
-                    else if (Motor_Pitch.Get_True_Angle_Pitch() <= -14)
-                        test_speed2 = -CRUISE_PITCH*0.5;
-                    // if (delay_time <= 1000) // 导航巡航 -> 巡航延迟消抖
-                    // {
-                    //     Motor_Pitch.Set_DJI_Motor_Control_Method(DJI_Motor_Control_Method_IMU_ANGLE);
-                    //     Motor_Pitch.Set_Target_Angle(-8.3651f);
-                    //     delay_time++;
-                    // }
-                    // else
-                    // {
-                    //     Motor_Pitch.Set_Target_Omega(test_speed2);
-                    //     Target_Pitch_Angle = Motor_Pitch.Get_True_Angle_Pitch(); // 获取pitch轴角度
-                    //     Math_Constrain(&Target_Pitch_Angle, Min_Pitch_Angle, Max_Pitch_Angle);  // pitch限位
-                    //     Motor_Pitch.Set_Target_Angle(Target_Pitch_Angle);                   // 设置pitch轴角度
-                    // }
-                }
                 else
-                {
-                    Motor_Pitch.Set_DJI_Motor_Control_Method(DJI_Motor_Control_Method_IMU_ANGLE);
-                    Motor_Yaw.Set_Target_Omega(CRUISE_SPEED * 0.5);                   
-                    Motor_Pitch.Set_Target_Angle(0.f);
-                    delay_time = 0;
-                }
+                    Motor_Yaw.Set_Target_Omega(CRUISE_SPEED * 0.5);
 
-                // Target_Yaw_Angle = Motor_Yaw.Get_True_Angle_Yaw(); // 设置yaw轴角度
-                // Motor_Yaw.Set_Target_Angle(Target_Yaw_Angle);
+                if (Motor_Pitch.Get_True_Angle_Pitch() >= 12) // 计算pitch轴速度
+                    test_speed2 = -CRUISE_PITCH;
+                else if (Motor_Pitch.Get_True_Angle_Pitch() <= -10)
+                    test_speed2 = CRUISE_PITCH; 
+
+                Motor_Pitch.Set_Target_Omega(test_speed2);
             }
-
             else if (MiniPC->Get_Gimbal_Control_Mode() == 1) // 云台非巡航状态
             {
                 // 云台工作
@@ -438,7 +426,6 @@ void Class_Gimbal::Output()
                 {
                     Motor_Yaw.Set_DJI_Motor_Control_Method(DJI_Motor_Control_Method_IMU_ANGLE);
                     Motor_Pitch.Set_DJI_Motor_Control_Method(DJI_Motor_Control_Method_IMU_ANGLE);
-                    Motor_Pitch_LK6010.Set_LK_Motor_Control_Method(LK_Motor_Control_Method_IMU_ANGLE);
 
                     Motor_Yaw.Set_Target_Angle(MiniPC->Get_Rx_Yaw_Angle()); // 设置yaw角度
 
@@ -451,34 +438,27 @@ void Class_Gimbal::Output()
                         Motor_Yaw.Set_Target_Angle(Motor_Yaw.Get_Target_Angle() + 360);
                     }
 
-                    Target_Pitch_Angle = MiniPC->Get_Rx_Pitch_Angle();                 // 获取pitch轴角度
+                    Target_Pitch_Angle = RAD_TO_ANGEL(MiniPC->Get_Rx_Pitch_Angle());                 // 获取pitch轴角度
                     Math_Constrain(&Target_Pitch_Angle, Min_Pitch_Angle, Max_Pitch_Angle); // pitch限位
                     Motor_Pitch.Set_Target_Angle(Target_Pitch_Angle);           // 设置pitch轴角度
                 }
                 else if (Auto_aim_flag == 1) // 导航
                 {
-                    
-                    // 云台工作
-                    // Motor_Yaw.Set_DJI_Motor_Control_Method(DJI_Motor_Control_Method_IMU_ANGLE);
-
-                    // Target_Yaw_Angle = Motor_Yaw.Get_True_Angle_Yaw();                      // 设置yaw轴角度
-                    // Motor_Yaw.Set_Target_Angle(Target_Yaw_Angle);
-
                     // //云台工作 (Pre_used)
                     Motor_Yaw.Set_DJI_Motor_Control_Method(DJI_Motor_Control_Method_IMU_OMEGA);
-                    Motor_Pitch.Set_DJI_Motor_Control_Method(DJI_Motor_Control_Method_IMU_ANGLE);
+                    Motor_Pitch.Set_DJI_Motor_Control_Method(DJI_Motor_Control_Method_IMU_OMEGA); 
 
-                    Target_Yaw_Angle = Motor_Yaw.Get_True_Angle_Yaw(); // 设置yaw轴角度
-                    Motor_Yaw.Set_Target_Angle(Target_Yaw_Angle);
-                    float Target_Yaw_Omega = MiniPC->Get_Gimbal_Angular_Velocity_Yaw(); // 设置yaw角速度
-                    if(MiniPC->Get_Gimbal_Angular_Velocity_Yaw()!=0){
-                       Motor_Yaw.Set_Target_Omega(MiniPC->Get_Gimbal_Angular_Velocity_Yaw()); 
-                    }
+                    float Target_Yaw_Omega = 1.7f; // 设置yaw角速度
+                    if(MiniPC->Get_Gimbal_Angular_Velocity_Yaw()!=0)
+                        Motor_Yaw.Set_Target_Omega(MiniPC->Get_Gimbal_Angular_Velocity_Yaw()); 
+                    
+                    if (Motor_Pitch.Get_True_Angle_Pitch() >= 12) // 计算pitch轴速度
+                        test_speed2 = -CRUISE_PITCH;
+                    else if (Motor_Pitch.Get_True_Angle_Pitch() <= -10)
+                        test_speed2 = CRUISE_PITCH; 
+
                     Motor_Yaw.Set_Target_Omega(Target_Yaw_Omega);
-
-                    Target_Pitch_Angle = 0.0f;                                         // 设置pitch为0°
-                    Math_Constrain(&Target_Pitch_Angle, Min_Pitch_Angle, Max_Pitch_Angle); // pitch限位
-                    Motor_Pitch.Set_Target_Angle(Target_Pitch_Angle);           // 设置pitch轴角度
+                    Motor_Pitch.Set_Target_Omega(test_speed2);
                 }
             }
         }
@@ -491,22 +471,13 @@ void Class_Gimbal::Output()
                 Motor_Yaw.Set_DJI_Motor_Control_Method(DJI_Motor_Control_Method_IMU_OMEGA);
                 Motor_Pitch.Set_DJI_Motor_Control_Method(DJI_Motor_Control_Method_IMU_OMEGA);
                 Motor_Yaw.Set_Target_Omega(CRUISE_SPEED); // 设定yaw轴速度
-                // Motor_Pitch.PID_Omega.Set_K_P(70);
-                // Motor_Pitch.PID_Omega.Set_K_I(10);
 
-                if (Motor_Pitch.Get_True_Angle_Pitch() >= 0) // 计算pitch轴速度
-                    test_speed2 = CRUISE_PITCH;//pid输出值是反的，为了暂时不影响yaw这里取反
-                else if (Motor_Pitch.Get_True_Angle_Pitch() <= -14)
-                    test_speed2 = -CRUISE_PITCH;
+                if (Motor_Pitch.Get_True_Angle_Pitch() >= 12) // 计算pitch轴速度
+                    test_speed2 = -CRUISE_PITCH;//pid输出值是反的，为了暂时不影响yaw这里取反
+                else if (Motor_Pitch.Get_True_Angle_Pitch() <= -10)
+                    test_speed2 = CRUISE_PITCH;
+                
                 Motor_Pitch.Set_Target_Omega(test_speed2);
-                // if (delay_time <= 1000) // 导航巡航 -> 巡航延迟消抖
-                // {
-                //     Motor_Pitch.Set_DJI_Motor_Control_Method(DJI_Motor_Control_Method_IMU_ANGLE);
-                //     Motor_Pitch.Set_Target_Angle(-8.3651f);
-                //     delay_time++;
-                // }
-                // else
-                //     Motor_Pitch.Set_Target_Omega(test_speed2);
             }
             else
             {              
@@ -516,11 +487,11 @@ void Class_Gimbal::Output()
                 Motor_Pitch.Set_DJI_Motor_Control_Method(DJI_Motor_Control_Method_IMU_ANGLE);
 
                 // 设置Yaw角度
-                Target_Yaw_Angle = Motor_Yaw.Get_True_Angle_Yaw();
+                Target_Yaw_Angle = 0.0f;
                 Motor_Yaw.Set_Target_Angle(Target_Yaw_Angle);
 
                 // 设置Pitch角度
-                Target_Pitch_Angle = Motor_Pitch.Get_True_Angle_Pitch();
+                Target_Pitch_Angle = 0.0f;
                 Math_Constrain(&Target_Pitch_Angle, Min_Pitch_Angle, Max_Pitch_Angle); // pitch限位
                 Motor_Pitch.Set_Target_Angle(Target_Pitch_Angle);
             }

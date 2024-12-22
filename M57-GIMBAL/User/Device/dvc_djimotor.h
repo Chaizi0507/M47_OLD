@@ -130,6 +130,7 @@ public:
     inline void Set_Target_Omega(float __Target_Omega);
     inline void Set_Target_Torque(float __Target_Torque);
     inline void Set_Out(float __Out);
+    inline void Set_Output_Max(float __Out_Max);
 
     void CAN_RxCpltCallback(uint8_t *Rx_Data);
     void TIM_Alive_PeriodElapsedCallback();
@@ -540,6 +541,16 @@ void Class_DJI_Motor_GM6020::Set_Target_Torque(float __Target_Torque)
 void Class_DJI_Motor_GM6020::Set_Out(float __Out)
 {
     Out = __Out;
+}
+
+/**
+ * @brief 设定输出量最大值
+ *
+ * @param __Output_Voltage 输出量最大值
+ */
+void Class_DJI_Motor_GM6020::Set_Output_Max(float __Out_Max)
+{
+    Output_Max = __Out_Max;
 }
 
 /**

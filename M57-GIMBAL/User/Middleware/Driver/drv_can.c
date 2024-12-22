@@ -256,14 +256,14 @@ void TIM_CAN_PeriodElapsedCallback()
         CAN_Send_Data(&hcan2, 0x154, CAN2_0x154_Tx_Data, 8);
     }
     //CAN_Send_Data(&hcan1, 0x150, can_send_data, 8); // 向上板发送
-//        //    // CAN2 yaw
-//        CAN_Send_Data(&hcan2, 0x1FF, CAN2_0x1ff_Tx_Data, 8);
+       //    // CAN2 yaw
+       CAN_Send_Data(&hcan2, 0x1FF, CAN2_0x1ff_Tx_Data, 8);
         //    // CAN1  pitch
         CAN_Send_Data(&hcan1, 0x1FF, CAN1_0x1ff_Tx_Data, 8);
-        // //CAN1  friction
-        // CAN_Send_Data(&hcan1, 0x200, CAN1_0x200_Tx_Data, 8);
-        // //CAN2  driver
-        // CAN_Send_Data(&hcan2, 0x200, CAN2_0x200_Tx_Data, 8);
+       //CAN1  friction
+       CAN_Send_Data(&hcan1, 0x200, CAN1_0x200_Tx_Data, 8);
+       //CAN2  driver
+       CAN_Send_Data(&hcan2, 0x200, CAN2_0x200_Tx_Data, 8);
 #endif
 }
 

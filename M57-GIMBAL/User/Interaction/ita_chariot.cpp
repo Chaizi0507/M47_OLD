@@ -424,25 +424,11 @@ void Class_Chariot::Control_Booster()
             //         return;
             //     }
             // }
-
-            // if (MiniPC.Get_Gimbal_Control_Mode() == MiniPC_Gimbal_Control_Mode_CRUISE || 
-            //     MiniPC.Get_MiniPC_Status() == MiniPC_Status_DISABLE) // 巡航/离线 不拨弹
-            //     Booster.Set_Booster_Control_Type(Booster_Control_Type_CEASEFIRE);
-
-            // else if (MiniPC.Get_Gimbal_Control_Mode() == MiniPC_Gimbal_Control_Mode_AUTO &&
-            //          Auto_aim_flag == 1) // 导航/空识别 不拨弹
-            //          Booster.Set_Booster_Control_Type(Booster_Control_Type_CEASEFIRE);
-
-            // else if (MiniPC.Get_Gimbal_Control_Mode() == MiniPC_Gimbal_Control_Mode_AUTO && 
-            //          Auto_aim_flag == 0) // 自瞄 拨弹
-            //         {
-            //             if (MiniPC.Get_Chassis_Target_Velocity_X() == 0 && MiniPC.Get_Chassis_Target_Velocity_Y() == 0)
-            //                 Booster.Set_Booster_Control_Type(Booster_Control_Type_MINIPC);
-            //             else
-            //                 Booster.Set_Booster_Control_Type(Booster_Control_Type_CEASEFIRE);
-            //         }
             if(Auto_aim_flag == 0){
                 Booster.Set_Booster_Control_Type(Booster_Control_Type_MINIPC);
+            }
+            else{
+                Booster.Set_Booster_Control_Type(Booster_Control_Type_CEASEFIRE);
             }
             break;
         }
