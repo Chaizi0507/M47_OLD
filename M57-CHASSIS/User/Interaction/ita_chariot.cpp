@@ -109,8 +109,6 @@ void Class_Chariot::CAN_Chassis_Rx_Gimbal_Callback()
     //     chassis_omega = 0;
     // }
     Gimbal_Alive_Flag++;
-    if(Gimbal_Alive_Flag == Pre_Gimbal_Alive_Flag) Set_Gimbal_Status(Gimbal_Status_DISABLE);
-    Pre_Gimbal_Alive_Flag = Gimbal_Alive_Flag;
     int16_t chassis_velocity_x, chassis_velocity_y, chassis_velocity_w;
 		
     Enum_Chassis_Control_Type chassis_control_type;
@@ -127,6 +125,7 @@ void Class_Chariot::CAN_Chassis_Rx_Gimbal_Callback()
     Chassis.Set_Target_Velocity_Y(Math_Int_To_Float(chassis_velocity_y ,-450,450,-4.0f,4.0f));//test
     Chassis.Set_Target_Omega(Math_Int_To_Float(chassis_velocity_w, -200,200,-4.0f,4.0f));
     Chassis.Set_Chassis_Control_Type(chassis_control_type);
+    
     //Chassis.Set_Target_Omega(chassis_omega);
 }
 #endif
@@ -241,62 +240,11 @@ void Class_Chariot::Control_Chassis()
             }
         }
     }
-    /************************************键鼠控制逻辑*********************************************/
-    else if (Get_DR16_Control_Type() == DR16_Control_Type_KEYBOARD)
-    {
-
-        if (DR16.Get_Keyboard_Key_Shift() == DR16_Key_Status_PRESSED) // 按住shift加速
-        {
-            DR16_Mouse_Chassis_Shift = 1.0f;
-            Sprint_Status = Sprint_Status_ENABLE;
-        }
-        else
-        {
-            DR16_Mouse_Chassis_Shift = 2.0f;
-            Sprint_Status = Sprint_Status_DISABLE;
-        }
-
-        if (DR16.Get_Keyboard_Key_A() == DR16_Key_Status_PRESSED) // x轴
-        {
-            chassis_velocity_x = -Chassis.Get_Velocity_X_Max() / DR16_Mouse_Chassis_Shift;
-        }
-        if (DR16.Get_Keyboard_Key_D() == DR16_Key_Status_PRESSED)
-        {
-            chassis_velocity_x = Chassis.Get_Velocity_X_Max() / DR16_Mouse_Chassis_Shift;
-        }
-        if (DR16.Get_Keyboard_Key_W() == DR16_Key_Status_PRESSED) // y轴
-        {
-            chassis_velocity_y = Chassis.Get_Velocity_Y_Max() / DR16_Mouse_Chassis_Shift;
-        }
-        if (DR16.Get_Keyboard_Key_S() == DR16_Key_Status_PRESSED)
-        {
-            chassis_velocity_y = -Chassis.Get_Velocity_Y_Max() / DR16_Mouse_Chassis_Shift;
-        }
-
-        if (DR16.Get_Keyboard_Key_Q() == DR16_Key_Status_TRIG_FREE_PRESSED) // Q键切换小陀螺与随动
-        {
-            if (Chassis.Get_Chassis_Control_Type() == Chassis_Control_Type_FLLOW)
-            {
-                Chassis.Set_Chassis_Control_Type(Chassis_Control_Type_SPIN);
-                chassis_omega = Chassis.Get_Spin_Omega();
-            }
-            else
-                Chassis.Set_Chassis_Control_Type(Chassis_Control_Type_FLLOW);
-        }
-
-        if (DR16.Get_Keyboard_Key_G() == DR16_Key_Status_PRESSED) // 按下G键刷新UI
-        {
-            Referee_UI_Refresh_Status = Referee_UI_Refresh_Status_ENABLE;
-        }
-        else
-        {
-            Referee_UI_Refresh_Status = Referee_UI_Refresh_Status_DISABLE;
-        }
-    }
 
     Chassis.Set_Target_Velocity_X(chassis_velocity_x);
     Chassis.Set_Target_Velocity_Y(chassis_velocity_y);
     Chassis.Set_Target_Omega(chassis_omega);
+    
 }
 #endif
 
@@ -643,6 +591,7 @@ void Class_Chariot::TIM1msMod50_Alive_PeriodElapsedCallback()
             TIM1msMod50_Gimbal_Communicate_Alive_PeriodElapsedCallback();
             mod50_mod3 = 0;
         }
+        TIM_Unline_Protect_PeriodElapsedCallback();
 #elif defined(GIMBAL)
 
         if (mod50_mod3 % 3 == 0)
@@ -707,7 +656,12 @@ void Class_Chariot::TIM_Unline_Protect_PeriodElapsedCallback()
 
 // 底盘离线保护
 #ifdef CHASSIS
-
+    if(Get_Gimbal_Status() == Gimbal_Status_DISABLE){
+        Chassis.Set_Chassis_Control_Type(Chassis_Control_Type_DISABLE);
+        Chassis.Set_Target_Velocity_X(0);
+        Chassis.Set_Target_Velocity_Y(0);
+        Chassis.Set_Target_Omega(0);
+    }
 #endif
 }
 

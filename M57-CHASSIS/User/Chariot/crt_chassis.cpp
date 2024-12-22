@@ -221,6 +221,7 @@ void Class_Tricycle_Chassis::TIM_Calculate_PeriodElapsedCallback(Enum_Sprint_Sta
 
 #endif
     // 速度解算
+    
     Speed_Resolution();
 #ifdef POWER_LIMIT
 

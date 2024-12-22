@@ -153,6 +153,7 @@ public:
         void TIM1msMod50_Gimbal_Communicate_Alive_PeriodElapsedCallback();
 
         inline void Set_Gimbal_Status(Enum_Gimbal_Status __Gimbal_Status);
+        inline Enum_Gimbal_Status Get_Gimbal_Status();
 
     #elif defined(GIMBAL)
 
@@ -418,6 +419,10 @@ void Class_Chariot::Set_Gimbal_Status(Enum_Gimbal_Status __Gimbal_Status){
     Gimbal_Status = __Gimbal_Status;
 }
 
+Enum_Gimbal_Status Class_Chariot::Get_Gimbal_Status()
+{
+    return (Gimbal_Status);
+}
 #endif
 
 /************************ COPYRIGHT(C) USTC-ROBOWALKER **************************/

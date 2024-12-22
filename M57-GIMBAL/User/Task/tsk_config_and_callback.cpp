@@ -364,19 +364,6 @@ void Task1ms_TIM5_Callback()
 
         /****************************** 驱动层回调函数 1ms *****************************************/
 
-        
-        // can_send_data[0]  = uint8_t((-chariot.DR16.Get_Left_X()+1)*255/2);
-        // can_send_data[1]  = uint8_t((chariot.DR16.Get_Left_Y()+1)*255/2);
-        // can_send_data[2]  = uint8_t((chariot.DR16.Get_Right_X()+1)*255/2);
-        // can_send_data[3]  = uint8_t((chariot.DR16.Get_Right_Y()+1)*255/2);
-        // can_send_data[4]  = chariot.DR16.Get_Left_Switch();
-        // can_send_data[5]  = chariot.DR16.Get_Right_Switch();
-        // can_send_data[6]  = chariot.DR16.Get_DR16_Status();
-
-        
-
-
-
         // 统一打包发送
         TIM_CAN_PeriodElapsedCallback();
 
