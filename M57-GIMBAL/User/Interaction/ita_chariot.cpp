@@ -209,9 +209,11 @@ void Class_Chariot::CAN_Gimbal_Tx_Chassis_Callback()
 
     float gimbal_angle = 0, chassis_angle = 0;
     //上位机优先
-    if(MiniPC.Get_Chassis_Target_Velocity_X()!=0||MiniPC.Get_Chassis_Target_Velocity_Y()!=0){
-        Chassis.Set_Target_Velocity_X(-MiniPC.Get_Chassis_Target_Velocity_X());//mention the x-y-z axis transformation
-        Chassis.Set_Target_Velocity_Y(-MiniPC.Get_Chassis_Target_Velocity_Y());
+    if(MiniPC.Get_MiniPC_Status() == MiniPC_Status_ENABLE && DR16.Get_Left_Switch() == DR16_Switch_Status_DOWN){    
+        if(MiniPC.Get_Chassis_Target_Velocity_X()!=0 || MiniPC.Get_Chassis_Target_Velocity_Y()!=0){
+            Chassis.Set_Target_Velocity_X(-MiniPC.Get_Chassis_Target_Velocity_X());//mention the x-y-z axis transformation
+            Chassis.Set_Target_Velocity_Y(-MiniPC.Get_Chassis_Target_Velocity_Y());
+        }
     }
     // 设定速度
     gimbal_velocity_x = Chassis.Get_Target_Velocity_X();

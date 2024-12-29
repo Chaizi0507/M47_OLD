@@ -1759,3 +1759,11 @@ These source files will be recompiled
 [2024-12-22 18:44:00]	[done]
 	build successfully !
 
+[2024-12-29 15:17:19]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\Embedded system\Project\RM\M57\M57-GIMBAL\User\Interaction\ita_chariot.cpp': source file has been changed.
+
+[2024-12-29 15:17:22]	[done]
+	build successfully !
+
