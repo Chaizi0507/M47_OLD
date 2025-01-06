@@ -326,12 +326,12 @@ void Class_Booster::Output()
 void Class_Booster::TIM_Calculate_PeriodElapsedCallback()
 {
     
-    //Output();
+    
     // 无需裁判系统的热量控制计算
     FSM_Heat_Detect.Reload_TIM_Status_PeriodElapsedCallback();
     //卡弹处理
-    FSM_Antijamming.Reload_TIM_Status_PeriodElapsedCallback();
-    //Output();
+    //FSM_Antijamming.Reload_TIM_Status_PeriodElapsedCallback();
+    Output();
 
     Motor_Driver.TIM_PID_PeriodElapsedCallback();
     Motor_Friction_Left.TIM_PID_PeriodElapsedCallback();

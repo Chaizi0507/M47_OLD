@@ -343,7 +343,7 @@ protected:
     float Rx_Angle_Yaw;
 
     const float g = 9.795;       // 重力加速度
-    const float bullet_v = 19.0; // 子弹速度
+    const float bullet_v = 20.0; // 子弹速度
 
     // 距离
     float Distance;

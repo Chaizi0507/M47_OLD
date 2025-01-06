@@ -239,43 +239,67 @@ float dz;
 extern can_rx3_t can_rx3;
 float Class_MiniPC::calc_pitch(float x, float y, float z)
 {
-    // 根据 x、y 分量计算的平面投影的模长和 z 分量计算的反正切值，得到弧度制的俯仰角
-    if (x == 0 || z == 0)
-    {
-        return IMU->Get_Angle_Pitch();
-    }
-    z=-z;
-    float temp_hight;
-    temp_hight = z;
-    float pitch_t,pitch;
-	  pitch = RAD_TO_ANGEL(atan2f(z, sqrtf(x*x+y*y)));
+//     // 根据 x、y 分量计算的平面投影的模长和 z 分量计算的反正切值，得到弧度制的俯仰角
+//     if (x == 0 || z == 0)
+//     {
+//         return IMU->Get_Angle_Pitch();
+//     }
+//     z=-z;
+//     float temp_hight;
+//     temp_hight = z;
+//     float pitch;
+// 	pitch = RAD_TO_ANGEL(atan2f(z, sqrtf(x*x+y*y)));
 
-
-//    if(can_rx3.initial_speed < 20 || can_rx3.initial_speed>30)  can_rx3.initial_speed = 24;
-    can_rx3.initial_speed = 20;
-   // 使用重力加速度模型迭代更新俯仰角
-    for (uint8_t i = 0; i < 20; i++)
-    {
-       pitch = atanf(temp_hight/sqrtf(x*x+y*y));
-       float v_x = (can_rx3.initial_speed) * cosf(pitch);
-       float v_y = (can_rx3.initial_speed) * sinf(pitch);
-       float k = 0.07;
-    //    float t = sqrtf(x*x + y*y) / v_x;
-       float t = (expf(k*sqrtf(x*x+y*y))-1)/(k*v_x);
-       float h = v_y*t - 0.5*g*t*t;
-       float dz = z - h;
+// //    if(can_rx3.initial_speed < 20 || can_rx3.initial_speed>30)  can_rx3.initial_speed = 24;
+//     can_rx3.initial_speed = 20;
+//     // 使用重力加速度模型迭代更新俯仰角
+//     for (uint8_t i = 0; i < 20; i++)
+//     {
+//        pitch = atanf(temp_hight/sqrtf(x*x+y*y));
+//        float v_x = (can_rx3.initial_speed) * cosf(pitch);
+//        float v_y = (can_rx3.initial_speed) * sinf(pitch);
+//        float k = 0.07;
+//        //float t = sqrtf(x*x + y*y) / v_x;
+//        float t = (expf(k*sqrtf(x*x+y*y))-1)/(k*v_x);
+//        float h = v_y*t - 0.5*g*t*t;
+//        float dz = z - h;
        
-       temp_hight += 0.5 * dz;
+//        temp_hight += 0.5 * dz;
 
-       if (fabsf(dz) < 0.001)
-       {
-           break;
-       }
+//        if (fabsf(dz) < 0.001)
+//        {
+//            break;
+//        }
 
-    //    根据 dz 和向量的欧几里德距离计算新的俯仰角的变化量，进行迭代更新
-        //  pitch += asinf(dz / calc_distance(x, y, z));
-   }
-    return -pitch;
+//     //    根据 dz 和向量的欧几里德距离计算新的俯仰角的变化量，进行迭代更新
+//         //  pitch += asinf(dz / calc_distance(x, y, z));
+//    }
+//     return -pitch;
+
+    // 根据 x、y 分量计算的平面投影的模长和 z 分量计算的反正切值，得到弧度制的俯仰角
+    float pitch = atan2f(z, sqrtf(x * x + y * y));
+    // 使用重力加速度模型迭代更新俯仰角
+    for (size_t i = 0; i < 20; i++) {
+        float v_x = bullet_v * cosf(pitch);
+        float v_y = bullet_v * sinf(pitch);
+        // 计算子弹飞行时间
+        float t = sqrtf(x * x + y * y) / v_x;
+        float h = v_y * t - 0.5 * g * t * t;
+        float dz = z - h;
+
+        if (abs(dz) < 0.01) 
+        {
+        break;
+        }
+        // 根据 dz 和向量的欧几里德距离计算新的俯仰角的变化量，进行迭代更新
+        pitch += asinf(dz / calc_distance(x, y, z));
+    }
+
+    // 将弧度制的俯仰角转换为角度制
+    //pitch = -(pitch * 180 / PI); // 向上为负，向下为正
+    pitch = pitch * 180 / PI; //向上为正，向下为负
+
+    return pitch;
 }
 /**
  * 计算yaw，pitch

@@ -155,38 +155,25 @@ void Class_Chariot::CAN_Chassis_Rx_Gimbal_Callback()
 can_rx1_t can_rx1;
 can_rx2_t can_rx2;
 can_rx3_t can_rx3;
+struct Gimbal_RX_Chassis{
+    Enum_Referee_Data_Robots_ID ID;
+    Enum_Referee_Game_Status_Stage Game_stage; 
+    uint16_t Shooter_Heat_Limit;
+    uint16_t Shooter_Cooling_Value;
+    uint16_t HP;
+};
+Gimbal_RX_Chassis Referee_Rx_Data;
+Gimbal_RX_Chassis Pre_Referee_Rx_Data;
 
 void Class_Chariot::CAN_Gimbal_Rx_Chassis_Callback()
 {
     Chassis_Flag++;
     switch (CAN2_Manage_Object.Rx_Buffer.Header.StdId)
     {
-    case (0x008):
+    case (0x88):
     {
-        memcpy(&can_rx1, CAN2_Manage_Object.Rx_Buffer.Data, sizeof(can_rx1));
-    }
-    break;
-    case (0x010):
-    {
-        memcpy(&can_rx2, CAN2_Manage_Object.Rx_Buffer.Data, sizeof(can_rx2));
-    }
-    break;
-    case (0x012):
-    {
-        Referee.Robot_Status.Booster_17mm_1_Heat_CD = CAN2_Manage_Object.Rx_Buffer.Data[0] << 8 | CAN2_Manage_Object.Rx_Buffer.Data[1];
-        Referee.Robot_Status.Booster_17mm_1_Heat_Max = CAN2_Manage_Object.Rx_Buffer.Data[2] << 8 | CAN2_Manage_Object.Rx_Buffer.Data[3];
-        Referee.Robot_Power_Heat.Booster_17mm_1_Heat = CAN2_Manage_Object.Rx_Buffer.Data[4] << 8 | CAN2_Manage_Object.Rx_Buffer.Data[5];
-        Referee.Robot_Power_Heat.Booster_17mm_2_Heat = CAN2_Manage_Object.Rx_Buffer.Data[6] << 8 | CAN2_Manage_Object.Rx_Buffer.Data[7];
-    }
-    break;
-    case (0x013):
-    {
-        memcpy(&can_rx3, CAN2_Manage_Object.Rx_Buffer.Data, sizeof(can_rx3));
-    }
-    break;
-    case (0x014):
-    {
-        //memcpy(&Chassis., CAN2_Manage_Object.Rx_Buffer.Data, sizeof(can_rx3));
+        memcpy(&Pre_Referee_Rx_Data,&Referee_Rx_Data,sizeof(Gimbal_RX_Chassis));
+        memcpy(&Referee_Rx_Data, &CAN2_Manage_Object.Rx_Buffer.Data, sizeof(Gimbal_RX_Chassis));
     }
     break;
     }
@@ -194,7 +181,7 @@ void Class_Chariot::CAN_Gimbal_Rx_Chassis_Callback()
 
 float gimbal_velocity_x = 0, gimbal_velocity_y = 0;
 float tmp_chassis_velocity_x = 0, tmp_chassis_velocity_y = 0,tmp_chassis_velocity_w = 0;
- int chassis_velocity_x = 0, chassis_velocity_y = 0, chassis_velocity_w = 0;
+int16_t chassis_velocity_x = 0, chassis_velocity_y = 0, chassis_velocity_w = 0;
 /**
  * @brief can云台向底盘发送数据
  *
@@ -243,10 +230,20 @@ void Class_Chariot::CAN_Gimbal_Tx_Chassis_Callback()
                 if( MiniPC.Get_Chassis_Control_Mode() == MiniPC_Chassis_Control_Mode_NORMAL || 
                     MiniPC.Get_Chassis_Control_Mode() == MiniPC_Chassis_Control_Mode_NORMAL_SPIN)
                     tmp_chassis_velocity_w = 0;//不随动
+                    if(Pre_Referee_Rx_Data.HP > Referee_Rx_Data.HP){
+                        tmp_chassis_velocity_w = 3;
+                        tmp_chassis_velocity_x = gimbal_velocity_x * cos(relative_angle) + gimbal_velocity_y * sin(relative_angle);
+                        tmp_chassis_velocity_y = -gimbal_velocity_x * sin(relative_angle) + gimbal_velocity_y * cos(relative_angle);
+                    }
             }
             else if (MiniPC.Get_MiniPC_Status() == MiniPC_Status_DISABLE 
                   && DR16.Get_Left_Switch()     == DR16_Switch_Status_DOWN){
                     tmp_chassis_velocity_w = 0;//不随动+受击陀螺
+                    if(Pre_Referee_Rx_Data.HP > Referee_Rx_Data.HP){
+                        tmp_chassis_velocity_w = 3;
+                        tmp_chassis_velocity_x = gimbal_velocity_x * cos(relative_angle) + gimbal_velocity_y * sin(relative_angle);
+                        tmp_chassis_velocity_y = -gimbal_velocity_x * sin(relative_angle) + gimbal_velocity_y * cos(relative_angle);
+                    }
             }
             break;
         }
@@ -258,6 +255,7 @@ void Class_Chariot::CAN_Gimbal_Tx_Chassis_Callback()
         }
         
     }
+    
     
     //Type conversion and clipping
     chassis_velocity_x = Math_Float_To_Int(tmp_chassis_velocity_x, -1 * Chassis.Get_Velocity_X_Max(), Chassis.Get_Velocity_X_Max(), -450, 450);
@@ -458,61 +456,6 @@ void Class_Chariot::Control_Booster()
         }
     }
 
-
-    // if (DR16.Get_Left_Switch() == DR16_Switch_Status_DOWN)
-    // {
-    //     if (DR16.Get_Right_Switch() != DR16_Switch_Status_DOWN) // 比赛未开始 不拨弹
-    //     {
-    //         if (can_rx1.game_process != 4)
-    //         {
-    //             Booster.Set_Booster_Control_Type(Booster_Control_Type_CEASEFIRE);
-    //             return;
-    //         }
-    //     }
-
-    //     if (MiniPC.Get_Gimbal_Control_Mode() == 0 || MiniPC.Get_MiniPC_Status() == MiniPC_Status_DISABLE) // 巡航/离线 不拨弹
-    //         Booster.Set_Booster_Control_Type(Booster_Control_Type_CEASEFIRE);
-    //     else if (MiniPC.Get_Gimbal_Control_Mode() == 1 && Auto_aim_flag == 1) // 导航/空识别 不拨弹
-    //         Booster.Set_Booster_Control_Type(Booster_Control_Type_CEASEFIRE);
-    //     else if (MiniPC.Get_Gimbal_Control_Mode() == 1 && Auto_aim_flag == 0) // 自瞄 拨弹
-    //     {
-    //         if (MiniPC.Get_Chassis_Target_Velocity_X() == 0 && MiniPC.Get_Chassis_Target_Velocity_Y() == 0)
-    //             Booster.Set_Booster_Control_Type(Booster_Control_Type_MINIPC);
-    //         else
-    //             Booster.Set_Booster_Control_Type(Booster_Control_Type_CEASEFIRE);
-    //     }
-
-    //     return;
-    // }
-
-    // if (DR16.Get_Right_Switch() == DR16_Switch_Status_UP)
-    // {
-    //     Booster.Set_Booster_Control_Type(Booster_Control_Type_CEASEFIRE);
-    //     if (DR16.Get_Yaw() >= -0.2 && DR16.Get_Yaw() <= 0.2)
-    //     {
-    //         booster_sign = 0;
-    //     }
-    //     else if (DR16.Get_Yaw() >= 0.8 && booster_sign == 0) // 单发
-    //     {
-    //         Booster.Set_Booster_Control_Type(Booster_Control_Type_SINGLE);
-    //         booster_sign = 1;
-    //     }
-    //     else if (DR16.Get_Yaw() <= -0.8 && booster_sign == 0) // 五连发
-    //     {
-    //         Booster.Set_Booster_Control_Type(Booster_Control_Type_MULTI);
-    //         booster_sign = 1;
-    //     }
-    // }
-    // // else if(DR16.Get_Right_Switch() == DR16_Switch_Status_DOWN) //连发
-    // // {
-    // //     Booster.Set_Booster_Control_Type(Booster_Control_Type_REPEATED);
-    // // }
-    // else if(DR16.Get_Right_Switch() == DR16_Switch_Status_DOWN){
-    //     Booster.Set_Booster_Control_Type(Booster_Control_Type_REPEATED);
-    // }
-    // else {
-    //     Booster.Set_Booster_Control_Type(Booster_Control_Type_DISABLE);
-    // }
 }
 
 #endif

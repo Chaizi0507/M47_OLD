@@ -189,27 +189,10 @@ void Gimbal_Device_CAN2_Callback(Struct_CAN_Rx_Buffer *CAN_RxMessage)
 {
     switch (CAN_RxMessage->Header.StdId)
     {
-        case (0x008): // 留给下板通讯
-        {
-            // chariot.Referee.CAN_RxCpltCallback(CAN_RxMessage->Data);
-            chariot.CAN_Gimbal_Rx_Chassis_Callback();
-        }
-        break;
-        case (0x010):
+        case (0x88):
         {
             chariot.CAN_Gimbal_Rx_Chassis_Callback();
         }
-        break;
-        case (0x012):
-        {
-            chariot.CAN_Gimbal_Rx_Chassis_Callback();
-        }
-        break;
-        case (0x014):
-        {
-            chariot.CAN_Gimbal_Rx_Chassis_Callback();
-        }
-        break;
         case (0x203):
         {
             chariot.Booster.Motor_Driver.CAN_RxCpltCallback(CAN_RxMessage->Data);
@@ -344,7 +327,7 @@ void Task1ms_TIM5_Callback()
     if (start_flag == 0 ) // 蜂鸣器：校验未完成
         buzzer_setTask(&buzzer, BUZZER_CALIBRATING_PRIORITY);
 
-    if (init_finished > 0) // 等待IMU稳定后开始控制
+    if (init_finished > 1000) // 等待IMU稳定后开始控制
         start_flag = 1;
 
     /************ 判断设备在线状态判断 50ms (所有device:电机，遥控器，裁判系统等) ***************/
